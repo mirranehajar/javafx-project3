@@ -41,9 +41,9 @@ public class AssistantDaoImp implements AssistantDao {
     }
 
     @Override
-    public Assistant getAssistant(Object attribut) {
+    public Assistant getAssistant(Integer id) {
         entityManager.getTransaction().begin();
-        Assistant assistant = entityManager.find(Assistant.class, attribut);
+        Assistant assistant = entityManager.find(Assistant.class, id);
         entityManager.getTransaction().commit();
 
         return assistant ;

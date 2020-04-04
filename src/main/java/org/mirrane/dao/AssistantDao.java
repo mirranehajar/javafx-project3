@@ -8,7 +8,7 @@ import java.util.List;
 public interface AssistantDao {
    void addAssistant(Assistant assistant);
     List<Assistant> getAssistants();
-    Assistant getAssistant(Object attribut);
+    Assistant getAssistant(Integer id);
     void updateAssistant(Assistant assistant);
     void deleteAssistant(Assistant assistant);
     boolean isPresent(int id);

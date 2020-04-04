@@ -42,9 +42,9 @@ public class SpecialtyDaoImp implements  SpecialtyDao {
     }
 
     @Override
-    public Specialty getSpecialty(Object attribut) {
+    public Specialty getSpecialty(Integer id) {
         entityManager.getTransaction().begin();
-        Specialty specialty = entityManager.find(Specialty.class, attribut);
+        Specialty specialty = entityManager.find(Specialty.class, id);
         entityManager.getTransaction().commit();
 
         return specialty;

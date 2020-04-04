@@ -55,7 +55,7 @@ public class AppointementDaoImpl implements AppointementDao {
     @Override
     public Appointement findAppointement(Object attribut) {
 
-        return entityManager.find(Appointement , attribut);
+        return null;
     }
 
 

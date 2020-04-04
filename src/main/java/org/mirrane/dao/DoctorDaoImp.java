@@ -41,9 +41,9 @@ public class DoctorDaoImp implements DoctorDao {
     }
 
     @Override
-    public Doctor getDoctor(Object attribut) {
+    public Doctor getDoctor(Integer id) {
         entityManager.getTransaction().begin();
-        Doctor doctor = entityManager.find(Doctor.class, attribut);
+        Doctor doctor = entityManager.find(Doctor.class, id);
         entityManager.getTransaction().commit();
 
         return doctor;
