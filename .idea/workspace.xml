@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585930364940</updated>
-      <workItem from="1586030998714" duration="4287000" />
+      <workItem from="1586030998714" duration="4864000" />
     </task>
     <task id="LOCAL-00001" summary="tried but failed">
       <created>1586031028905</created>
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586031028905</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="evrything done">
+      <created>1586035435504</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586035435505</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +106,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tried but failed" />
-    <option name="LAST_COMMIT_MESSAGE" value="tried but failed" />
+    <MESSAGE value="evrything done" />
+    <option name="LAST_COMMIT_MESSAGE" value="evrything done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Project_Structure" timestamp="1585931554303">
@@ -112,10 +119,10 @@
     </state>
     <state x="488" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586032563175" />
     <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1585943318953" />
-    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586031027088">
+    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586035434296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586031027088" />
+    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586035434296" />
     <state width="1323" height="165" key="GridCell.Tab.0.bottom" timestamp="1586035337228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -136,14 +143,18 @@
     </state>
     <state width="1323" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586035337228" />
     <state width="1011" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
+    <state x="213" y="22" key="Maven.ArtifactSearchDialog" timestamp="1586035816708">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="22" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1586035816708" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1585930887257">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585930887257" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586031038058">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586035497614">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586031038058" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586035497614" />
     <state x="378" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1586006254784">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
