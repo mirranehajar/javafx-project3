@@ -215,10 +215,10 @@
     </state>
     <state x="488" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586032563175" />
     <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1585943318953" />
-    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586035434296">
+    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586035945074">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586035434296" />
+    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586035945074" />
     <state width="1323" height="165" key="GridCell.Tab.0.bottom" timestamp="1586035337228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -253,6 +253,7 @@
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585930887257" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1586027421842">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -269,6 +270,12 @@
     </state>
     <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586035497614" />
 >>>>>>> 49a71cd53d1774786d1d86a9ce94bddbcfa327d8
+=======
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586035963992">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586035963992" />
+>>>>>>> cb38530c0140ec33bc972fc9f82491ebbb7e34e7
     <state x="378" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1586006254784">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
