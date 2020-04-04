@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/DoctorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/DoctorDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586029347790</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dao1">
+      <created>1586035372711</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586035372711</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,7 +123,8 @@
     <MESSAGE value="entitys(doc assis spec)" />
     <MESSAGE value="manytoon(doctor)" />
     <MESSAGE value="dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="dao" />
+    <MESSAGE value="dao1" />
+    <option name="LAST_COMMIT_MESSAGE" value="dao1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Project_Structure" timestamp="1585931554303">
@@ -128,14 +135,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586030535992" />
+    <state x="531" y="258" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586035429236">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="531" y="258" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.738@0.0.1366.738" timestamp="1586035429236" />
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586030482451">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1586030482451" />
-    <state x="324" y="0" key="CommitChangelistDialog2" timestamp="1586029346655">
+    <state x="324" y="0" key="CommitChangelistDialog2" timestamp="1586035371496">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="324" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586029346655" />
+    <state x="324" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586035371496" />
     <state width="962" height="610" key="GridCell.Tab.0.bottom" timestamp="1586026257612">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -152,6 +163,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="962" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586026257612" />
+    <state x="395" y="85" key="MultipleFileMergeDialog" timestamp="1586035391395">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="395" y="85" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1586035391395" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1585930887257">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -164,9 +179,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="378" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586006254784" />
-    <state x="383" y="160" key="git4idea.merge.GitPullDialog" timestamp="1586029360009">
+    <state x="383" y="160" key="git4idea.merge.GitPullDialog" timestamp="1586035380247">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="383" y="160" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1586029360009" />
+    <state x="383" y="160" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1586035380247" />
   </component>
 </project>
