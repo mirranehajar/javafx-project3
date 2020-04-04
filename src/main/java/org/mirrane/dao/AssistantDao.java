@@ -9,6 +9,7 @@ public interface AssistantDao {
    void addAssistant(Assistant assistant);
     List<Assistant> getAssistants();
     Assistant getAssistant(Integer id);
+    Assistant getAssistantByCin(String cin);
     void updateAssistant(Assistant assistant);
     void deleteAssistant(Assistant assistant);
     boolean isPresent(int id);

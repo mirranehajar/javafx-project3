@@ -9,6 +9,7 @@ public interface DoctorDao {
     void addDoctor(Doctor doctor);
     List<Doctor> getDoctors();
     Doctor getDoctor(Integer id);
+    Doctor getDoctorByCin(String cin);
     void updateDoctor(Doctor doctor);
     void deleteDoctor(Doctor doctor);
     boolean isPresent(int id);
