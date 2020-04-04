@@ -17,6 +17,8 @@ public class Doctor {
     private int phoneNumber;
     private String address;
     private String password;
+    @ManyToOne
+    Specialty specialty;
 
     public Doctor() {
     }

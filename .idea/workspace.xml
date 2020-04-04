@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Assistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Assistant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Specialty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Specialty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/service/PatientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,12 +89,20 @@
       <option name="project" value="LOCAL" />
       <updated>1586023491913</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="entitys(doc assis spec)">
+      <created>1586025596704</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586025596704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="entitys" />
-    <option name="LAST_COMMIT_MESSAGE" value="entitys" />
+    <MESSAGE value="entitys(doc assis spec)" />
+    <option name="LAST_COMMIT_MESSAGE" value="entitys(doc assis spec)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Project_Structure" timestamp="1585931554303">
@@ -111,22 +117,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="324" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586025595192" />
-    <state width="492" height="610" key="GridCell.Tab.0.bottom" timestamp="1586023728099">
+    <state width="962" height="610" key="GridCell.Tab.0.bottom" timestamp="1586026257612">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="492" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586023728099" />
-    <state width="492" height="610" key="GridCell.Tab.0.center" timestamp="1586023728098">
+    <state width="962" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586026257612" />
+    <state width="962" height="610" key="GridCell.Tab.0.center" timestamp="1586026257612">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="492" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586023728098" />
-    <state width="492" height="610" key="GridCell.Tab.0.left" timestamp="1586023728098">
+    <state width="962" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586026257612" />
+    <state width="962" height="610" key="GridCell.Tab.0.left" timestamp="1586026257612">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="492" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586023728098" />
-    <state width="492" height="610" key="GridCell.Tab.0.right" timestamp="1586023728099">
+    <state width="962" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586026257612" />
+    <state width="962" height="610" key="GridCell.Tab.0.right" timestamp="1586026257612">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="492" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586023728099" />
+    <state width="962" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586026257612" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1585930887257">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
