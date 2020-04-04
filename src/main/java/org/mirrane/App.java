@@ -5,11 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.mirrane.dao.ClientDaoImp;
-import org.mirrane.dao.JpaUtil;
-import org.mirrane.entity.Client;
-import org.mirrane.entity.Patient;
-import org.mirrane.service.ClientService;
 import org.mirrane.service.PatientService;
 
 import javax.persistence.EntityManager;
@@ -33,8 +28,9 @@ public class App extends Application {
         */
 
        PatientService  patientService = new PatientService();
-
+/*
         System.out.println("1------------------------------------------------------");
+
         patientService.addPatient(new Patient(1,"hajar","htdty","hh","jj",06545455454,"fnhtd","hi8"));
         System.out.println("2------------------------------------------------------");
         patientService.getPatients().forEach(patient -> System.out.println(patient.toString()));
@@ -46,7 +42,7 @@ public class App extends Application {
         patientService.deletePatient(1);
         System.out.println("6------------------------------------------------------");
         patientService.getPatients().forEach(patient -> System.out.println(patient.toString()));
-
+*/
 
     }
 
