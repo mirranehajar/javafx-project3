@@ -1,5 +1,6 @@
 package org.mirrane.dao;
 
+import org.mirrane.entity.Appointement;
 import org.mirrane.entity.Checkout;
 
 import javax.persistence.EntityManager;
@@ -51,7 +52,17 @@ public class CheckoutDaoImpl implements CheckoutDao {
     }
 
     @Override
-    public Checkout findCheckout(Object attribut) {
+    public Checkout findCheckoutByReference(String reference) {
+        return null;
+    }
+
+    @Override
+    public Checkout findCheckoutByLibelle(String libelle) {
+        return null;
+    }
+
+    @Override
+    public Checkout findCheckoutByCurrentAppointement(Appointement appointement) {
         return null;
     }
 

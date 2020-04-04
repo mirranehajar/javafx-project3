@@ -30,4 +30,7 @@ public class TypeAppointementService {
     public Boolean isPrestent(TypeAppointement TypeAppointement){
         return typeAppointementDao.isPresent(TypeAppointement.getId());
     }
+    public TypeAppointement findTypeAppointementByReference(String reference){
+        return typeAppointementDao.findTypeAppointementByReference(reference);
+    }
 }

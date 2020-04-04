@@ -1,8 +1,12 @@
 package org.mirrane.dao;
 
 import org.mirrane.entity.Appointement;
+import org.mirrane.entity.Doctor;
+import org.mirrane.entity.Patient;
+import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
+import java.util.Date;
 import java.util.List;
 
 public class AppointementDaoImpl implements AppointementDao {
@@ -53,11 +57,40 @@ public class AppointementDaoImpl implements AppointementDao {
     }
 
     @Override
-    public Appointement findAppointement(Object attribut) {
-
-        return entityManager.find(Appointement , attribut);
+    public Appointement findAppointementByReference(String reference) {
+        String query = "SELECT Appointement FROM Appointement a WHERE a.reference='" + reference + "'";
+        return (Appointement) entityManager.createQuery(query).getSingleResult();
     }
 
+    @Override
+    public Appointement findAppointementByDateAppointement(Date dateAppointement) {
+        return null;
+    }
+
+    @Override
+    public Appointement findAppointementByHourAppointement(Date hourAppointement) {
+        return null;
+    }
+
+    @Override
+    public Appointement findAppointementByStateAppointement(String StateAppointement) {
+        return null;
+    }
+
+    @Override
+    public Appointement findAppointementByTypeAppointement(TypeAppointement typeAppointement) {
+        return null;
+    }
+
+    @Override
+    public Appointement findAppointementByPatient(Patient patient) {
+        return null;
+    }
+
+    @Override
+    public Appointement findAppointementByDoctor(Doctor doctor) {
+        return null;
+    }
 
     @Override
     public boolean isPresent(Integer id) {

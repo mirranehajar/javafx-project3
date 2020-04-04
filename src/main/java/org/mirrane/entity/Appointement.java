@@ -108,6 +108,9 @@ public class Appointement implements Serializable {
         this.doctor = doctor;
     }
 
+    public Appointement() {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -119,5 +122,19 @@ public class Appointement implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "Appointement{" +
+                "reference='" + reference + '\'' +
+                ", dateAppointement=" + dateAppointement +
+                ", hourAppointement=" + hourAppointement +
+                ", stateAppointement='" + stateAppointement + '\'' +
+                ", typeAppointement=" + typeAppointement +
+                ", patient=" + patient +
+                ", doctor=" + doctor +
+                ", checkout=" + checkout +
+                '}';
     }
 }

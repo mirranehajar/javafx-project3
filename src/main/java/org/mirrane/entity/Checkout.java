@@ -47,6 +47,9 @@ public class Checkout {
         this.currentAppointement = currentAppointement;
     }
 
+    public Checkout() {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -64,5 +67,14 @@ public class Checkout {
         this.reference = reference;
         this.nextAppointement = nextAppointement;
         this.currentAppointement = currentAppointement;
+    }
+
+    @Override
+    public String toString() {
+        return "Checkout{" +
+                "reference='" + reference + '\'' +
+                ", nextAppointement=" + nextAppointement +
+                ", currentAppointement=" + currentAppointement +
+                '}';
     }
 }

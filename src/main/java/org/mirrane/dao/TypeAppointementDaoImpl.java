@@ -1,8 +1,10 @@
 package org.mirrane.dao;
 
+import org.mirrane.entity.Appointement;
 import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 public class TypeAppointementDaoImpl implements TypeAppointementDao {
@@ -52,10 +54,20 @@ public class TypeAppointementDaoImpl implements TypeAppointementDao {
     }
 
     @Override
-    public TypeAppointement findTypeAppointement(Object attribut) {
+    public TypeAppointement findTypeAppointementByReference(String reference) {
+        TypedQuery<TypeAppointement> query =  entityManager.createQuery("SELECT ta FROM TypeAppointement ta WHERE ta.reference = '" + reference + "'", TypeAppointement.class);
+        return query.getSingleResult();
+    }
+
+    @Override
+    public TypeAppointement findTypeAppointementByLibelle(String libelle) {
         return null;
     }
 
+    @Override
+    public TypeAppointement findTypeAppointementByPrice(float price) {
+        return null;
+    }
 
     @Override
     public boolean isPresent(Integer id) {

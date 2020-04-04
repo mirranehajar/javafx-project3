@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.mirrane.entity.TypeAppointement;
 import org.mirrane.service.PatientService;
+import org.mirrane.service.TypeAppointementService;
 
 import javax.persistence.EntityManager;
 import java.io.IOException;
@@ -27,7 +29,12 @@ public class App extends Application {
 
         */
 
-       PatientService  patientService = new PatientService();
+      /* PatientService  patientService = new PatientService();
+        TypeAppointementService typeAppointementService = new TypeAppointementService();
+        typeAppointementService.saveTypeAppointement(new TypeAppointement("ref1","lib1", 12));*/
+        TypeAppointementService typeAppointementService = new TypeAppointementService();
+        TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference("ref1");
+        System.out.println(typeAppointement);
 /*
         System.out.println("1------------------------------------------------------");
 

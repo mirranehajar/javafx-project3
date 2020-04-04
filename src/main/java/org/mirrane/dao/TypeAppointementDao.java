@@ -9,6 +9,8 @@ public interface TypeAppointementDao {
     void deleteTypeAppointement(TypeAppointement typeAppointement);
     void updateTypeAppointement(TypeAppointement typeAppointement);
     List<TypeAppointement> findAllTypeAppointement();
-    TypeAppointement findTypeAppointement(Object attribut);
+    TypeAppointement findTypeAppointementByReference(String reference);
+    TypeAppointement findTypeAppointementByLibelle(String libelle);
+    TypeAppointement findTypeAppointementByPrice(float price);
     boolean isPresent(Integer id);
 }

@@ -51,6 +51,9 @@ public class TypeAppointement {
         this.price = price;
     }
 
+    public TypeAppointement() {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -62,5 +65,14 @@ public class TypeAppointement {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "TypeAppointement{" +
+                "reference='" + reference + '\'' +
+                ", libelle='" + libelle + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
