@@ -1,12 +1,13 @@
 package org.mirrane.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
 @Entity
 @Table(name = "appointement")
-public class Appointement {
+public class Appointement implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
