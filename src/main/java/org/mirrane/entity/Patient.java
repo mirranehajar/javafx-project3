@@ -23,20 +23,17 @@ public class Patient {
 
     private String address;
 
-    private String password;
 
     public Patient() {
     }
 
-    public Patient(Integer id, String cin, String lastName, String firstName, String mail, int phoneNumber, String address, String password) {
-        this.id = id;
+    public Patient( String cin, String lastName, String firstName, String mail, int phoneNumber, String address) {
         this.cin = cin;
         this.lastName = lastName;
         this.firstName = firstName;
         this.mail = mail;
         this.phoneNumber = phoneNumber;
         this.address = address;
-        this.password = password;
     }
 
     public Integer getId() {
@@ -95,13 +92,6 @@ public class Patient {
         this.address = address;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -126,7 +116,6 @@ public class Patient {
                 ", mail='" + mail + '\'' +
                 ", phoneNumber=" + phoneNumber +
                 ", address='" + address + '\'' +
-                ", password='" + password + '\'' +
                 '}';
     }
 }

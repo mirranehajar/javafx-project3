@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Assistant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Assistant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Specialty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Specialty.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="javafx-project3" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,6 +32,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1a2OkV3ivjOdUI4Fd77W91h4Hdk" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -81,37 +84,53 @@
       <option name="presentableId" value="Default" />
       <updated>1585930364940</updated>
     </task>
+    <task id="LOCAL-00001" summary="entitys">
+      <created>1586023491912</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586023491913</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="entitys" />
+    <option name="LAST_COMMIT_MESSAGE" value="entitys" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Project_Structure" timestamp="1585931554303">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1585931554303" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1585943318953">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1586025430789">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1585943318953" />
-    <state width="1011" height="610" key="GridCell.Tab.0.bottom" timestamp="1586006333541">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586025430789" />
+    <state width="492" height="610" key="GridCell.Tab.0.bottom" timestamp="1586023728099">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1011" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1011" height="610" key="GridCell.Tab.0.center" timestamp="1586006333541">
+    <state width="492" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586023728099" />
+    <state width="492" height="610" key="GridCell.Tab.0.center" timestamp="1586023728098">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1011" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1011" height="610" key="GridCell.Tab.0.left" timestamp="1586006333541">
+    <state width="492" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586023728098" />
+    <state width="492" height="610" key="GridCell.Tab.0.left" timestamp="1586023728098">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1011" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1011" height="610" key="GridCell.Tab.0.right" timestamp="1586006333541">
+    <state width="492" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586023728098" />
+    <state width="492" height="610" key="GridCell.Tab.0.right" timestamp="1586023728099">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1011" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
+    <state width="492" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586023728099" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1585930887257">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585930887257" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1586023607246">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1586023607246" />
     <state x="378" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1586006254784">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
