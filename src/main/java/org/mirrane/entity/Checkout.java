@@ -1,26 +1,25 @@
 package org.mirrane.entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.util.Objects;
 
+@Entity
+@Table(name = "checkout")
 public class Checkout {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String reference;
     @OneToOne
     private Appointement nextAppointement;
     @OneToOne
     private Appointement currentAppointement;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

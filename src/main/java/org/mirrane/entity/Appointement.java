@@ -22,6 +22,8 @@ public class Appointement {
     private Patient patient;
     @ManyToOne
     private Doctor doctor;
+    @ManyToOne
+    private Checkout checkout;
 
     public Integer getId() {
         return id;
@@ -55,12 +57,12 @@ public class Appointement {
         this.hourAppointement = hourAppointement;
     }
 
-    public String getEtatAppointement() {
+    public String getStateAppointement() {
         return stateAppointement;
     }
 
-    public void setEtatAppointement(String etatAppointement) {
-        this.stateAppointement = etatAppointement;
+    public void setStateAppointement(String stateAppointement) {
+        this.stateAppointement = stateAppointement;
     }
 
     public TypeAppointement getTypeAppointement() {
@@ -85,6 +87,14 @@ public class Appointement {
 
     public void setDoctor(Doctor doctor) {
         this.doctor = doctor;
+    }
+
+    public Checkout getCheckout() {
+        return checkout;
+    }
+
+    public void setCheckout(Checkout checkout) {
+        this.checkout = checkout;
     }
 
     public Appointement(String reference, Date dateAppointement, Date hourAppointement, String stateAppointement, TypeAppointement typeAppointement, Patient patient, Doctor doctor) {
