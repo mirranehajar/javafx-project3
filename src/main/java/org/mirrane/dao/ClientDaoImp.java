@@ -41,7 +41,7 @@ public class ClientDaoImp implements ClientDao {
     }
 
     @Override
-    public Client getClientById(int id) {
+    public Client getClientById(Integer id) {
 
         entityManager.getTransaction().begin();
         Client client = entityManager.find(Client.class, id);
@@ -65,7 +65,7 @@ public class ClientDaoImp implements ClientDao {
     }
 
     @Override
-    public boolean isPresent(int id) {
+    public boolean isPresent(Integer id) {
         Client client = entityManager.find(Client.class, id);
         if (client == null) return false;
         else return true;
