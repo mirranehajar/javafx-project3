@@ -8,7 +8,9 @@ import javafx.stage.Stage;
 import org.mirrane.dao.ClientDaoImp;
 import org.mirrane.dao.JpaUtil;
 import org.mirrane.entity.Client;
+import org.mirrane.entity.Patient;
 import org.mirrane.service.ClientService;
+import org.mirrane.service.PatientService;
 
 import javax.persistence.EntityManager;
 import java.io.IOException;
@@ -24,9 +26,28 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"));
+       /* scene = new Scene(loadFXML("primary"));
         stage.setScene(scene);
         stage.show();
+
+        */
+
+       PatientService  patientService = new PatientService();
+
+        System.out.println("1------------------------------------------------------");
+        patientService.addPatient(new Patient(1,"hajar","htdty","hh","jj",06545455454,"fnhtd","hi8"));
+        System.out.println("2------------------------------------------------------");
+        patientService.getPatients().forEach(patient -> System.out.println(patient.toString()));
+        System.out.println("3------------------------------------------------------");
+        System.out.println(patientService.getPatientById(3).toString());
+        System.out.println("4------------------------------------------------------");
+        patientService.updatePatient(new Patient(1,"bb","joooo","haha","jaja",0654540000,"l","h99" ));
+        System.out.println("5------------------------------------------------------");
+        patientService.deletePatient(1);
+        System.out.println("6------------------------------------------------------");
+        patientService.getPatients().forEach(patient -> System.out.println(patient.toString()));
+
+
     }
 
     static void setRoot(String fxml) throws IOException {
