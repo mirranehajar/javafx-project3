@@ -23,14 +23,14 @@ public class ClientService {
         return clientDao.getClients();
     }
 
-    public Client getClientById(int id) {
+    public Client getClientById(Integer id) {
 
         Client client;
 
         if (clientDao.isPresent(id)) {
             client = clientDao.getClientById(id);
         } else {
-            client = new Client(0, "not Found");
+            client = new Client("not Found");
         }
 
         return client;
@@ -45,7 +45,7 @@ public class ClientService {
 
     }
 
-    public void deleteClient(int id) {
+    public void deleteClient(Integer id) {
         Client client = getClientById(id);
         if (!client.getId().equals(0)){
             clientDao.deleteClient(client);

@@ -7,8 +7,8 @@ import java.util.List;
 public interface ClientDao {
     void addClient(Client client);
     List<Client> getClients();
-    Client getClientById(int id);
+    Client getClientById(Integer id);
     void updateClient(Client client);
     void deleteClient(Client client);
-    boolean isPresent(int id);
+    boolean isPresent(Integer id);
 }
