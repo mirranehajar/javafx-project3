@@ -1,16 +1,17 @@
 package org.mirrane.dao;
 
+import org.mirrane.entity.Assistant;
 import org.mirrane.entity.Client;
-import org.mirrane.entity.Patient;
+import org.mirrane.entity.Doctor;
 
 import javax.persistence.EntityManager;
 import java.util.List;
 
-public class PatientDaoImp implements PatientDao {
+public class AssistantDaoImp implements AssistantDao {
 
     EntityManager entityManager;
 
-    public PatientDaoImp() {
+    public AssistantDaoImp() {
         this.entityManager = JpaUtil.getEntityManagerFactory().createEntityManager();
     }
 
@@ -24,52 +25,50 @@ public class PatientDaoImp implements PatientDao {
     }
 
     @Override
-    public void addPatient(Patient patient) {
-        patient.setId(null);
+    public void addAssistant(Assistant assistant) {
+        assistant.setId(null);
         entityManager.getTransaction().begin();
-        entityManager.persist(patient);
+        entityManager.persist(assistant);
         entityManager.getTransaction().commit();
-
     }
 
     @Override
-    public List<Patient> getPatients() {
+    public List<Assistant> getAssistants() {
         entityManager.getTransaction().begin();
-        List<Patient> patients = entityManager.createQuery("FROM Patient", Patient.class).getResultList();
+        List<Assistant> assistants = entityManager.createQuery("FROM Assistant", Assistant.class).getResultList();
         entityManager.getTransaction().commit();
-        return patients;
+        return assistants;
     }
 
     @Override
-    public Patient getPatientById(Integer id) {
-
+    public Assistant getAssistant(Object attribut) {
         entityManager.getTransaction().begin();
-        Patient patient = entityManager.find(Patient.class, id);
+        Assistant assistant = entityManager.find(Assistant.class, attribut);
         entityManager.getTransaction().commit();
 
-        return patient;
+        return assistant ;
     }
 
     @Override
-    public void updatePatient(Patient patient) {
-        entityManager.getTransaction().begin();
-        entityManager.merge(patient);
-        entityManager.getTransaction().commit();
+    public void updateAssistant(Assistant assistant) {
 
+        entityManager.getTransaction().begin();
+        entityManager.merge(assistant);
+        entityManager.getTransaction().commit();
     }
 
     @Override
-    public void deletePatient(Patient patient) {
-        entityManager.getTransaction().begin();
-        entityManager.remove(patient);
-        entityManager.getTransaction().commit();
+    public void deleteAssistant(Assistant assistant) {
 
+        entityManager.getTransaction().begin();
+        entityManager.remove(assistant);
+        entityManager.getTransaction().commit();
     }
 
     @Override
-    public boolean isPresent(Integer id) {
-        Patient patient = entityManager.find(Patient.class, id);
-        if (patient == null) return false;
+    public boolean isPresent(int id) {
+        Assistant assistant = entityManager.find(Assistant.class, id);
+        if (assistant == null) return false;
         else return true;
     }
 
