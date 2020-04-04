@@ -42,7 +42,7 @@ public class PatientService {
         }
     }
 
-    public void deletePatient(int id) {
+    public void deletePatient(Integer id) {
         Patient patient = getPatientById(id);
         if (!patient.getId().equals(0)){
             patientDao.deletePatient(patient);

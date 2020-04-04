@@ -1,16 +1,16 @@
 package org.mirrane.dao;
 
-import org.mirrane.entity.Client;
+import org.mirrane.entity.Doctor;
 import org.mirrane.entity.Patient;
 
 import javax.persistence.EntityManager;
 import java.util.List;
 
-public class PatientDaoImp implements PatientDao {
+public class DoctorDaoImp implements DoctorDao {
 
     EntityManager entityManager;
 
-    public PatientDaoImp() {
+    public DoctorDaoImp() {
         this.entityManager = JpaUtil.getEntityManagerFactory().createEntityManager();
     }
 
@@ -24,52 +24,51 @@ public class PatientDaoImp implements PatientDao {
     }
 
     @Override
-    public void addPatient(Patient patient) {
-        patient.setId(null);
+    public void addDoctor(Doctor doctor) {
+        doctor.setId(null);
         entityManager.getTransaction().begin();
-        entityManager.persist(patient);
+        entityManager.persist(doctor);
         entityManager.getTransaction().commit();
 
     }
 
     @Override
-    public List<Patient> getPatients() {
+    public List<Doctor> getDoctors() {
         entityManager.getTransaction().begin();
-        List<Patient> patients = entityManager.createQuery("FROM Patient", Patient.class).getResultList();
+        List<Doctor> doctors = entityManager.createQuery("FROM Doctor", Doctor.class).getResultList();
         entityManager.getTransaction().commit();
-        return patients;
+        return doctors;
     }
 
     @Override
-    public Patient getPatientById(Integer id) {
-
+    public Doctor getDoctor(Integer id) {
         entityManager.getTransaction().begin();
-        Patient patient = entityManager.find(Patient.class, id);
+        Doctor doctor = entityManager.find(Doctor.class, id);
         entityManager.getTransaction().commit();
 
-        return patient;
+        return doctor;
     }
 
     @Override
-    public void updatePatient(Patient patient) {
+    public void updateDoctor(Doctor doctor) {
         entityManager.getTransaction().begin();
-        entityManager.merge(patient);
-        entityManager.getTransaction().commit();
-
-    }
-
-    @Override
-    public void deletePatient(Patient patient) {
-        entityManager.getTransaction().begin();
-        entityManager.remove(patient);
+        entityManager.merge(doctor);
         entityManager.getTransaction().commit();
 
     }
 
     @Override
-    public boolean isPresent(Integer id) {
-        Patient patient = entityManager.find(Patient.class, id);
-        if (patient == null) return false;
+    public void deleteDoctor(Doctor doctor) {
+        entityManager.getTransaction().begin();
+        entityManager.remove(doctor);
+        entityManager.getTransaction().commit();
+
+    }
+
+    @Override
+    public boolean isPresent(int id) {
+        Doctor doctor = entityManager.find(Doctor.class, id);
+        if (doctor == null) return false;
         else return true;
     }
 
