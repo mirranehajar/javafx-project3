@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/AppointementDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/AppointementDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/CheckoutDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/CheckoutDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/CheckoutDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/CheckoutDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/TypeAppointementDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/TypeAppointementDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Appointement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Appointement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/service/AppointementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/service/AppointementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/service/CheckoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/service/CheckoutService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/service/TypeAppointementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/service/TypeAppointementService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,33 +119,29 @@
     </state>
     <state x="488" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586032563175" />
     <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1585943318953" />
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586040572637">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586040572637" />
     <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586035945074">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586035945074" />
-    <state width="1323" height="280" key="GridCell.Tab.0.bottom" timestamp="1586040621977">
+    <state width="1323" height="165" key="GridCell.Tab.0.bottom" timestamp="1586035337228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="280" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586040621977" />
+    <state width="1323" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586035337228" />
     <state width="1011" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1323" height="280" key="GridCell.Tab.0.center" timestamp="1586040621977">
+    <state width="1323" height="165" key="GridCell.Tab.0.center" timestamp="1586035337228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="280" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586040621977" />
+    <state width="1323" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586035337228" />
     <state width="1011" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1323" height="280" key="GridCell.Tab.0.left" timestamp="1586040621977">
+    <state width="1323" height="165" key="GridCell.Tab.0.left" timestamp="1586035337228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="280" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586040621977" />
+    <state width="1323" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586035337228" />
     <state width="1011" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1323" height="280" key="GridCell.Tab.0.right" timestamp="1586040621977">
+    <state width="1323" height="165" key="GridCell.Tab.0.right" timestamp="1586035337228">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="280" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586040621977" />
+    <state width="1323" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586035337228" />
     <state width="1011" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
     <state x="213" y="22" key="Maven.ArtifactSearchDialog" timestamp="1586035816708">
       <screen x="0" y="0" width="1366" height="728" />
@@ -164,10 +151,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585930887257" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586040715992">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586035963992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586040715992" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586035963992" />
     <state x="378" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1586006254784">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

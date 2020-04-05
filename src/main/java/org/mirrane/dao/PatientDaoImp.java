@@ -1,5 +1,6 @@
 package org.mirrane.dao;
 
+import org.mirrane.entity.Assistant;
 import org.mirrane.entity.Client;
 import org.mirrane.entity.Patient;
 
@@ -48,6 +49,12 @@ public class PatientDaoImp implements PatientDao {
         entityManager.getTransaction().commit();
 
         return patient;
+    }
+
+    @Override
+    public Patient getPatientByCin(String cin) {
+        String query = "SELECT Patient FROM Patient p WHERE p.cin='" + cin + "'";
+        return (Patient) entityManager.createQuery(query).getSingleResult();
     }
 
     @Override

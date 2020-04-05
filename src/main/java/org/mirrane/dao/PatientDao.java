@@ -9,7 +9,8 @@ public interface PatientDao {
     void addPatient(Patient patient);
     List<Patient> getPatients();
     Patient getPatientById(Integer id);
-   void updatePatient(Patient patient);
+    Patient getPatientByCin(String cin);
+    void updatePatient(Patient patient);
     void deletePatient(Patient patient);
     boolean isPresent(Integer id);
 }

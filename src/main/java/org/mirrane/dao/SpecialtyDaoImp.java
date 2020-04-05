@@ -1,5 +1,6 @@
 package org.mirrane.dao;
 
+import org.mirrane.entity.Assistant;
 import org.mirrane.entity.Doctor;
 import org.mirrane.entity.Specialty;
 
@@ -48,6 +49,12 @@ public class SpecialtyDaoImp implements  SpecialtyDao {
         entityManager.getTransaction().commit();
 
         return specialty;
+    }
+
+    @Override
+    public Specialty getSpecialtyReference(String reference) {
+        String query = "SELECT Specialty FROM Specialty s WHERE s.refecence='" + reference + "'";
+        return (Specialty) entityManager.createQuery(query).getSingleResult();
     }
 
     @Override
