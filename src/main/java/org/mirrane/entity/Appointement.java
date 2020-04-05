@@ -1,7 +1,6 @@
 package org.mirrane.entity;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
@@ -23,8 +22,6 @@ public class Appointement  {
     private Patient patient;
     @ManyToOne
     private Doctor doctor;
-    @ManyToOne
-    private Checkout checkout;
 
     public Integer getId() {
         return id;
@@ -90,19 +87,10 @@ public class Appointement  {
         this.doctor = doctor;
     }
 
-    public Checkout getCheckout() {
-        return checkout;
-    }
-
-    public void setCheckout(Checkout checkout) {
-        this.checkout = checkout;
-    }
-
-    public Appointement(String reference, Date dateAppointement, Date hourAppointement, String stateAppointement, TypeAppointement typeAppointement, Patient patient, Doctor doctor) {
+    public Appointement(String reference, Date dateAppointement, Date hourAppointement, TypeAppointement typeAppointement, Patient patient, Doctor doctor) {
         this.reference = reference;
         this.dateAppointement = dateAppointement;
         this.hourAppointement = hourAppointement;
-        this.stateAppointement = stateAppointement;
         this.typeAppointement = typeAppointement;
         this.patient = patient;
         this.doctor = doctor;
@@ -134,7 +122,6 @@ public class Appointement  {
                 ", typeAppointement=" + typeAppointement +
                 ", patient=" + patient +
                 ", doctor=" + doctor +
-                ", checkout=" + checkout +
                 '}';
     }
 }

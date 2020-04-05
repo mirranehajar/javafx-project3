@@ -11,7 +11,7 @@ public class TypeAppointement {
     private Integer id;
     private String reference;
     private String libelle;
-    private float price;
+    private Double price;
 
     public Integer getId() {
         return id;
@@ -37,15 +37,15 @@ public class TypeAppointement {
         this.libelle = libelle;
     }
 
-    public float getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
-    public TypeAppointement(String reference, String libelle, float price) {
+    public TypeAppointement(String reference, String libelle, Double price) {
         this.reference = reference;
         this.libelle = libelle;
         this.price = price;
