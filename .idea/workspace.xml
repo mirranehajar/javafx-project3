@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/AddTypeAppointement.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/AddTypeAppointementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/AddAppTest.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/AddAppointement.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/AddAppointementController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/AddPerson.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/AddPersonnController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/Login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/Speciality.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/controller/SpecialityController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/org/mirrane" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/mirrane" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -61,15 +64,16 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="org.mirrane.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Haraj\IdeaProjects\javafx-project3\src\main\resources\org\mirrane" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\blackswan\IdeaProjects\javafx-project3\src\main\resources" />
+      <recent name="C:\Users\blackswan\IdeaProjects\javafx-project3\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.mirrane" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\blackswan\IdeaProjects\javafx-project3\src\main\resources" />
-      <recent name="C:\Users\blackswan\IdeaProjects\javafx-project3\src\main\java" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Haraj\IdeaProjects\javafx-project3\src\main\java\org\mirrane" />
+      <recent name="C:\Users\Haraj\IdeaProjects\javafx-project3\src\main\resources\org\mirrane" />
     </key>
   </component>
   <component name="RunManager">
@@ -105,7 +109,7 @@
       <workItem from="1586030998714" duration="4864000" />
       <workItem from="1586087906086" duration="7984000" />
       <workItem from="1586096152977" duration="5540000" />
-      <workItem from="1586106922393" duration="736000" />
+      <workItem from="1586106922393" duration="1397000" />
     </task>
     <task id="LOCAL-00001" summary="tried but failed">
       <created>1586031028905</created>
@@ -135,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586048804156</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="controller khdm">
+      <created>1586107870536</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586107870536</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +157,8 @@
     <MESSAGE value="evrything done" />
     <MESSAGE value="service with details" />
     <MESSAGE value="hanti chufi" />
-    <option name="LAST_COMMIT_MESSAGE" value="hanti chufi" />
+    <MESSAGE value="controller khdm" />
+    <option name="LAST_COMMIT_MESSAGE" value="controller khdm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Project_Structure" timestamp="1585931554303">
@@ -166,10 +178,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586105732791" />
-    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586101750128">
+    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586107868955">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586101750128" />
+    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586107868955" />
     <state x="410" y="108" key="FileChooserDialogImpl" timestamp="1586082723330">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -203,10 +215,10 @@
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586104778631" />
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585930887257" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586048811220">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586107884973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586048811220" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586107884973" />
     <state x="378" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1586106926087">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
