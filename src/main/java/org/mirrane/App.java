@@ -27,20 +27,20 @@ public class App extends Application {
 
 
 
-        scene = new Scene(loadFXML("AddTypeAppointement"));
+        scene = new Scene(loadFXML("Speciality"));
         stage.setScene(scene);
         stage.show();
 
 
 
-       PatientService  patientService = new PatientService();
+      /* PatientService  patientService = new PatientService();
 
        TypeAppointementService typeAppointementService = new TypeAppointementService();
-     TypeAppointement typeAppointement = new TypeAppointement("ref3","lib1", (double) 12);
+       TypeAppointement typeAppointement = new TypeAppointement("ref3","lib1", (double) 12);
        typeAppointementService.saveTypeAppointement(typeAppointement);
 
        TypeAppointement typeAppointementFounded = typeAppointementService.findTypeAppointementByReference("ref1");
-        System.out.println(typeAppointementFounded);
+        System.out.println(typeAppointementFounded);*/
 /*
         System.out.println("1------------------------------------------------------");
 

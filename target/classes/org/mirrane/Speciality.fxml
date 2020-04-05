@@ -11,21 +11,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mirrane.controller.Speciality">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mirrane.SpecialityController">
    <children>
       <AnchorPane id="AnchorPane" prefHeight="457.0" prefWidth="700.0" style="-fx-background-color: #288E88;">
          <children>
             <AnchorPane layoutX="414.0" layoutY="130.0" prefHeight="185.0" prefWidth="257.0" style="-fx-background-color: #A4ABAA;">
                <children>
-                  <Button layoutX="148.0" layoutY="135.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #288E88;" text="Add" />
-                  <JFXTextField layoutX="109.0" layoutY="66.0" style="-fx-background-color: #FFFFFF;" />
+                  <Button layoutX="148.0" layoutY="135.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #288E88;" text="Add" />
+                  <JFXTextField fx:id="libelle" layoutX="109.0" layoutY="66.0" style="-fx-background-color: #FFFFFF;" />
                   <Label layoutX="31.0" layoutY="68.0" text="Libelle">
                      <font>
                         <Font size="14.0" />
                      </font>
                   </Label>
                   <Button layoutX="14.0" layoutY="135.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #288E88;" text="Edit" />
-                  <JFXTextField layoutX="109.0" layoutY="24.0" style="-fx-background-color: #FFFFFF;" />
+                  <JFXTextField fx:id="reference" layoutX="109.0" layoutY="24.0" style="-fx-background-color: #FFFFFF;" />
                   <Label layoutX="31.0" layoutY="26.0" text="Reference">
                      <font>
                         <Font size="14.0" />
