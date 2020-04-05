@@ -13,8 +13,17 @@ public class DoctorService {
         this.doctorDao = new DoctorDaoImp();
     }
 
-    public void addDoctor(Doctor doctor) {
-        doctorDao.addDoctor(doctor);
+    public int addDoctor(Doctor doctor) {
+
+        Doctor doctorFounded= getDoctorByCin(doctor.getCin());
+        if (doctorFounded == null) {
+            doctorDao.addDoctor(doctor);
+
+            return 1;
+        }
+        else {
+            return -1;
+        }
     }
 
     public List<Doctor> getDoctors() {

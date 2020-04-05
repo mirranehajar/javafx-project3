@@ -6,6 +6,7 @@ import org.mirrane.entity.Patient;
 import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -27,11 +28,12 @@ public class PatientDaoImp implements PatientDao {
     }
 
     @Override
-    public void addPatient(Patient patient) {
+    public int addPatient(Patient patient) {
         patient.setId(null);
         entityManager.getTransaction().begin();
         entityManager.persist(patient);
         entityManager.getTransaction().commit();
+        return 0;
 
     }
 
@@ -55,8 +57,13 @@ public class PatientDaoImp implements PatientDao {
 
     @Override
     public Patient getPatientByCin(String cin) {
-        TypedQuery<Patient> query =  entityManager.createQuery("SELECT p FROM Patient p WHERE p.cin = '" + cin + "'", Patient.class);
-        return query.getSingleResult();
+        try{
+            TypedQuery<Patient> query =  entityManager.createQuery("SELECT p FROM Patient p WHERE p.cin = '" + cin + "'", Patient.class);
+            return query.getSingleResult();
+        }catch (NoResultException e){
+            return null;
+        }
+
     }
 
     @Override

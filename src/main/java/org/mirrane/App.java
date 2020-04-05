@@ -25,6 +25,8 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
 
 
+
+
         scene = new Scene(loadFXML("AddTypeAppointement"));
         stage.setScene(scene);
         stage.show();
@@ -55,10 +57,6 @@ public class App extends Application {
         patientService.getPatients().forEach(patient -> System.out.println(patient.toString()));
 */
 
-    }
-
-    static void setRoot(String fxml) throws IOException {
-        scene.setRoot(loadFXML(fxml));
     }
 
     private static Parent loadFXML(String fxml) throws IOException {

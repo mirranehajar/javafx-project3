@@ -4,6 +4,7 @@ import org.mirrane.dao.PatientDao;
 import org.mirrane.dao.PatientDaoImp;
 import org.mirrane.entity.Client;
 import org.mirrane.entity.Patient;
+import org.mirrane.entity.TypeAppointement;
 
 import java.util.List;
 
@@ -14,8 +15,17 @@ public class PatientService {
         this.patientDao = new PatientDaoImp();
     }
 
-    public void addPatient(Patient patient) {
-        patientDao.addPatient(patient);
+    public int addPatient(Patient patient) {
+
+        Patient patientFounded = getPatientByCin(patient.getCin());
+        if (patientFounded == null) {
+            patientDao.addPatient(patient);
+
+            return 1;
+        }
+        else {
+            return -1;
+        }
     }
 
     public List<Patient> getPatients() {
@@ -51,6 +61,7 @@ public class PatientService {
     }
 
     public Patient getPatientByCin(String cin) {
+
         return patientDao.getPatientByCin(cin);
     }
 

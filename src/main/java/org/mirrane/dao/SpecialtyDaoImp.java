@@ -6,6 +6,7 @@ import org.mirrane.entity.Specialty;
 import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -28,11 +29,12 @@ public class SpecialtyDaoImp implements  SpecialtyDao {
     }
 
     @Override
-    public void addSpecialty(Specialty specialty) {
+    public int addSpecialty(Specialty specialty) {
         specialty.setId(null);
         entityManager.getTransaction().begin();
         entityManager.persist(specialty);
         entityManager.getTransaction().commit();
+        return 0;
 
     }
 
@@ -55,8 +57,12 @@ public class SpecialtyDaoImp implements  SpecialtyDao {
 
     @Override
     public Specialty getSpecialtyReference(String reference) {
-        TypedQuery<Specialty> query =  entityManager.createQuery("SELECT s FROM Specialty s WHERE s.reference = '" + reference + "'", Specialty.class);
-        return query.getSingleResult();
+        try {
+            TypedQuery<Specialty> query = entityManager.createQuery("SELECT s FROM Specialty s WHERE s.reference = '" + reference + "'", Specialty.class);
+            return query.getSingleResult();
+        }catch (NoResultException e){
+            return null;
+        }
     }
 
     @Override
