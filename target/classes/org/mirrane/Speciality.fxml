@@ -33,7 +33,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <TableView layoutX="14.0" layoutY="59.0" prefHeight="370.0" prefWidth="331.0">
+            <TableView layoutX="14.0" layoutY="59.0" prefHeight="308.0" prefWidth="331.0">
                <columns>
                   <TableColumn prefWidth="61.0" text="Reference" />
                   <TableColumn prefWidth="96.0" text="Libelle" />
@@ -51,13 +51,7 @@
                   <MenuItem mnemonicParsing="false" text="Action 2" />
                </items>
             </MenuButton>
-            <AnchorPane layoutX="409.0" layoutY="359.0" prefHeight="70.0" prefWidth="266.0" style="-fx-background-color: #A4ABAA;">
-               <children>
-                  <JFXTextField layoutX="60.0" layoutY="20.0" style="-fx-background-color: #FFFFFF;" />
-                  <Label layoutX="4.0" layoutY="24.0" text="Search" />
-                  <JFXButton buttonType="RAISED" layoutX="216.0" layoutY="20.0" style="-fx-background-color: #288E88;" text="Delete" />
-               </children>
-            </AnchorPane>
+            <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="379.0" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #A4ABAA;" text="Delete" />
          </children>
       </AnchorPane>
    </children>
