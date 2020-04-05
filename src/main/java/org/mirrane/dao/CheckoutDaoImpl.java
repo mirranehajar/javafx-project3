@@ -38,6 +38,15 @@ public class CheckoutDaoImpl implements CheckoutDao {
     }
 
     @Override
+    public Checkout getCheckoutById(Integer id) {
+        entityManager.getTransaction().begin();
+        Checkout checkout = entityManager.find(Checkout.class, id);
+        entityManager.getTransaction().commit();
+
+        return checkout;
+    }
+
+    @Override
     public List<Checkout> findAllCheckout() {
         entityManager.getTransaction().begin();
         List<Checkout> checkouts = entityManager.createQuery("FROM Checkout ", Checkout.class).getResultList();
@@ -60,7 +69,6 @@ public class CheckoutDaoImpl implements CheckoutDao {
     @Override
     public boolean isPresent(Integer id) {
         Checkout checkout = entityManager.find(Checkout.class, id);
-        if (checkout == null) return false;
-        else return true;
+        return checkout != null;
     }
 }

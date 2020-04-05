@@ -5,7 +5,6 @@ import org.mirrane.entity.Doctor;
 import org.mirrane.entity.Patient;
 import org.mirrane.entity.TypeAppointement;
 
-import javax.persistence.Temporal;
 import java.util.Date;
 import java.util.List;
 
@@ -13,6 +12,7 @@ public interface AppointementDao {
     void saveAppointement(Appointement appointement);
     void deleteAppointement(Appointement appointement);
     void updateAppointement(Appointement appointement);
+    Appointement getAppointementById(Integer id);
     List<Appointement> findAllAppointement();
     Appointement findAppointementByReference(String reference);
     Appointement findAppointementByDateAppointement(Date dateAppointement);

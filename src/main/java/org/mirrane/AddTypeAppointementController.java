@@ -12,7 +12,7 @@ public class AddTypeAppointementController {
 
 
 
-    TypeAppointementService typeAppointementService ;
+    public TypeAppointementService typeAppointementService ;
     @FXML
     private JFXTextField reference;
     @FXML
@@ -20,11 +20,23 @@ public class AddTypeAppointementController {
     @FXML
     private JFXTextField price;
 
+    public AddTypeAppointementController() {
+        this.typeAppointementService = new TypeAppointementService();
+    }
 
     @FXML
     public void save() throws IOException {
-        TypeAppointement typeAppointement = new TypeAppointement(reference.getText(), libelle.getText(), new Double(price.getText()));
+        System.out.println(reference.getText());
+        System.out.println(libelle.getText());
+        System.out.println(new Double(price.getText()));
+        TypeAppointement typeAppointement = new TypeAppointement();
+        typeAppointement.setReference(reference.getText());
+        typeAppointement.setLibelle(libelle.getText());
+        typeAppointement.setPrice(new Double(price.getText()));
         typeAppointementService.saveTypeAppointement(typeAppointement);
+        reference = new JFXTextField();
+        libelle = new JFXTextField();
+        price = new JFXTextField();
 
     }
 

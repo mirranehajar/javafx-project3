@@ -11,6 +11,18 @@ public class CheckoutService {
     CheckoutDao checkoutDao;
     AppointementService appointementService;
 
+    public Checkout getCheckoutById(int id) {
+        Checkout checkout;
+
+        if (checkoutDao.isPresent(id)) {
+            checkout = checkoutDao.getCheckoutById(id);
+        } else {
+            checkout = null;
+        }
+
+        return checkout;
+    }
+
     public CheckoutService() {
         this.checkoutDao = new CheckoutDaoImpl();
     }
