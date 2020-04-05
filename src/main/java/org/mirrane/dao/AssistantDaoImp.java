@@ -25,11 +25,12 @@ public class AssistantDaoImp implements AssistantDao {
     }
 
     @Override
-    public void addAssistant(Assistant assistant) {
+    public int addAssistant(Assistant assistant) {
         assistant.setId(null);
         entityManager.getTransaction().begin();
         entityManager.persist(assistant);
         entityManager.getTransaction().commit();
+        return 0;
     }
 
     @Override

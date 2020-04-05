@@ -28,11 +28,12 @@ public class PatientDaoImp implements PatientDao {
     }
 
     @Override
-    public void addPatient(Patient patient) {
+    public int addPatient(Patient patient) {
         patient.setId(null);
         entityManager.getTransaction().begin();
         entityManager.persist(patient);
         entityManager.getTransaction().commit();
+        return 0;
 
     }
 

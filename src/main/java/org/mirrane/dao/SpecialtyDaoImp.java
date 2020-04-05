@@ -29,11 +29,12 @@ public class SpecialtyDaoImp implements  SpecialtyDao {
     }
 
     @Override
-    public void addSpecialty(Specialty specialty) {
+    public int addSpecialty(Specialty specialty) {
         specialty.setId(null);
         entityManager.getTransaction().begin();
         entityManager.persist(specialty);
         entityManager.getTransaction().commit();
+        return 0;
 
     }
 

@@ -6,7 +6,7 @@ import org.mirrane.entity.Doctor;
 import java.util.List;
 
 public interface AssistantDao {
-   void addAssistant(Assistant assistant);
+   int addAssistant(Assistant assistant);
     List<Assistant> getAssistants();
     Assistant getAssistant(Integer id);
     Assistant getAssistantByCin(String cin);

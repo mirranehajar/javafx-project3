@@ -13,8 +13,17 @@ public class AssistantService {
         this.assistantDao = new AssistantDaoImp();
     }
 
-    public void addAssistant(Assistant assistant) {
-        assistantDao.addAssistant(assistant);
+    public int addAssistant(Assistant assistant) {
+
+        Assistant assistantFounded = getAssistantByCin(assistant.getCin());
+        if (assistantFounded == null) {
+            assistantDao.addAssistant(assistant);
+
+            return 1;
+        }
+        else {
+            return -1;
+        }
     }
 
     public List<Assistant> getAssistants() {

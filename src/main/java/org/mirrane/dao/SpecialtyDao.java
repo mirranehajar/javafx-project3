@@ -5,7 +5,7 @@ import org.mirrane.entity.Specialty;
 import java.util.List;
 
 public interface SpecialtyDao {
-    void addSpecialty(Specialty specialty);
+    int addSpecialty(Specialty specialty);
     List<Specialty> getSpecialties();
     Specialty getSpecialty(Integer id);
     Specialty getSpecialtyReference(String reference);

@@ -13,8 +13,16 @@ public class SpecialtyService {
         this.specialtyDao = new SpecialtyDaoImp();
     }
 
-    public void addSpecialty(Specialty specialty) {
-        specialtyDao.addSpecialty(specialty);
+    public int addSpecialty(Specialty specialty) {
+       Specialty specialtyFounded = getSpecialtyReference(specialty.getReference());
+        if (specialtyFounded == null) {
+            specialtyDao.addSpecialty(specialty);
+
+            return 1;
+        }
+        else {
+            return -1;
+        }
     }
 
     public List<Specialty> getSpecialties() {

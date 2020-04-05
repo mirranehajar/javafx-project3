@@ -6,7 +6,7 @@ import org.mirrane.entity.Patient;
 import java.util.List;
 
 public interface PatientDao {
-    void addPatient(Patient patient);
+    int addPatient(Patient patient);
     List<Patient> getPatients();
     Patient getPatientById(Integer id);
     Patient getPatientByCin(String cin);
