@@ -51,6 +51,7 @@ public class PatientService {
     }
 
     public Patient getPatientByCin(String cin) {
+
         return patientDao.getPatientByCin(cin);
     }
 

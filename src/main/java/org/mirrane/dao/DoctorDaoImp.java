@@ -5,6 +5,7 @@ import org.mirrane.entity.Doctor;
 import org.mirrane.entity.Patient;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -53,8 +54,12 @@ public class DoctorDaoImp implements DoctorDao {
 
     @Override
     public Doctor getDoctorByCin(String cin) {
-        TypedQuery<Doctor> query =  entityManager.createQuery("SELECT d FROM Patient d WHERE d.cin = '" + cin + "'", Doctor.class);
-        return query.getSingleResult();
+        try {
+            TypedQuery<Doctor> query = entityManager.createQuery("SELECT d FROM Patient d WHERE d.cin = '" + cin + "'", Doctor.class);
+            return query.getSingleResult();
+        }catch (NoResultException e){
+            return  null;
+        }
     }
 
     @Override

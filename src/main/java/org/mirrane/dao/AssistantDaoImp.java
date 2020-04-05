@@ -3,6 +3,7 @@ package org.mirrane.dao;
 import org.mirrane.entity.*;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -50,8 +51,12 @@ public class AssistantDaoImp implements AssistantDao {
 
     @Override
     public Assistant getAssistantByCin(String cin) {
-        TypedQuery<Assistant> query =  entityManager.createQuery("SELECT a FROM Assistant a WHERE p.cin = '" + cin + "'", Assistant.class);
-        return query.getSingleResult();
+        try {
+            TypedQuery<Assistant> query = entityManager.createQuery("SELECT a FROM Assistant a WHERE p.cin = '" + cin + "'", Assistant.class);
+            return query.getSingleResult();
+        }catch (NoResultException e){
+            return  null;
+        }
     }
 
     @Override

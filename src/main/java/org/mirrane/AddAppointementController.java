@@ -1,4 +1,4 @@
-package org.mirrane.controller;
+package org.mirrane;
 
 import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;

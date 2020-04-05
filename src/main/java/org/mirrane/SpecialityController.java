@@ -1,4 +1,4 @@
-package org.mirrane.controller;
+package org.mirrane;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
