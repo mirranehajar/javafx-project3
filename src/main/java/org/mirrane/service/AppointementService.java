@@ -24,6 +24,7 @@ public class AppointementService {
             return 1;
         } else return -1;
     }
+
     public int updateAppointement(Appointement appointement){
         Appointement appointementFounded = findAppointementByReference(appointement.getReference());
         if ( appointementFounded != null) {
