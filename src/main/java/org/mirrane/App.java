@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.mirrane.entity.Patient;
 import org.mirrane.entity.TypeAppointement;
 import org.mirrane.service.PatientService;
 import org.mirrane.service.TypeAppointementService;
@@ -24,24 +23,28 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+
+
+
+
         scene = new Scene(loadFXML("AddTypeAppointement"));
         stage.setScene(scene);
         stage.show();
 
+/*
 
+       PatientService  patientService = new PatientService();
 
-      //PatientService  patientService = new PatientService();
-       // TypeAppointementService typeAppointementService = new TypeAppointementService();
-      // typeAppointementService.saveTypeAppointement(new TypeAppointement("ref2","lib1", 12));
-        //typeAppointementService.findTypeAppointementByReference("ref1");
-        //TypeAppointementService typeAppointementService = new TypeAppointementService();
-       // TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference("ref1");
-        //System.out.println(typeAppointement);
+       TypeAppointementService typeAppointementService = new TypeAppointementService();
+        TypeAppointement typeAppointement = new TypeAppointement("ref2","lib1", (double) 12);
+        typeAppointementService.saveTypeAppointement(typeAppointement);*/
 
-     /*   System.out.println("1------------------------------------------------------");
+      /*  TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference("ref1");
+        System.out.println(typeAppointement);*/
+/*
+        System.out.println("1------------------------------------------------------");
 
-                patientService.addPatient(new Patient("78i","htdty","hh","kk",985764,"fnhtd"));
-                patientService.getPatientByCin("78i");
+        patientService.addPatient(new Patient(1,"hajar","htdty","hh","jj",06545455454,"fnhtd","hi8"));
         System.out.println("2------------------------------------------------------");
         patientService.getPatients().forEach(patient -> System.out.println(patient.toString()));
         System.out.println("3------------------------------------------------------");
@@ -61,9 +64,10 @@ public class App extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource( fxml + ".fxml"));
         return fxmlLoader.load();
     }
+
 
     public static void main(String[] args) {
         launch();
