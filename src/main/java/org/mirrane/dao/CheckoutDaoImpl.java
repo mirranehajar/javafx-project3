@@ -4,6 +4,7 @@ import org.mirrane.entity.Appointement;
 import org.mirrane.entity.Checkout;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 public class CheckoutDaoImpl implements CheckoutDao {
@@ -37,13 +38,6 @@ public class CheckoutDaoImpl implements CheckoutDao {
     }
 
     @Override
-    public void updateCheckout(Checkout checkout) {
-        entityManager.getTransaction().begin();
-        entityManager.merge(checkout);
-        entityManager.getTransaction().commit();
-    }
-
-    @Override
     public List<Checkout> findAllCheckout() {
         entityManager.getTransaction().begin();
         List<Checkout> checkouts = entityManager.createQuery("FROM Checkout ", Checkout.class).getResultList();
@@ -53,17 +47,14 @@ public class CheckoutDaoImpl implements CheckoutDao {
 
     @Override
     public Checkout findCheckoutByReference(String reference) {
-        return null;
-    }
-
-    @Override
-    public Checkout findCheckoutByLibelle(String libelle) {
-        return null;
+        TypedQuery<Checkout> query =  entityManager.createQuery("SELECT c FROM Checkout c WHERE c.reference = '" + reference + "'", Checkout.class);
+        return query.getSingleResult();
     }
 
     @Override
     public Checkout findCheckoutByCurrentAppointement(Appointement appointement) {
-        return null;
+        TypedQuery<Checkout> query =  entityManager.createQuery("SELECT c FROM Checkout c WHERE c.currentAppointement = '" + appointement + "'", Checkout.class);
+        return query.getSingleResult();
     }
 
     @Override

@@ -13,16 +13,37 @@ public class TypeAppointementService {
         this.typeAppointementDao = new TypeAppointementDaoImpl();
     }
     public int saveTypeAppointement(TypeAppointement typeAppointement){
-        typeAppointementDao.saveTypeAppointement(typeAppointement);
-        return 1;
+        TypeAppointement typeAppointementFounded = findTypeAppointementByReference(typeAppointement.getReference());
+        if (typeAppointementFounded != null) {
+            typeAppointementDao.saveTypeAppointement(typeAppointement);
+
+            return 1;
+        }
+        else {
+            return -1;
+        }
     }
-    public int updateTypeAppointement(TypeAppointement TypeAppointement){
-        typeAppointementDao.updateTypeAppointement(TypeAppointement);
-        return 1;
+    public int updateTypeAppointement(TypeAppointement typeAppointement){
+        TypeAppointement typeAppointementFounded = findTypeAppointementByReference(typeAppointement.getReference());
+        if( typeAppointementFounded!= null){
+            typeAppointementFounded.setLibelle(typeAppointement.getLibelle());
+            typeAppointementFounded.setPrice(typeAppointement.getPrice());
+        typeAppointementDao.updateTypeAppointement(typeAppointement);
+            return 1;
+        }
+        else {
+            return -1;
+        }
     }
     public int deleteTypeAppointement(TypeAppointement TypeAppointement){
+        TypeAppointement typeAppointementFounded = findTypeAppointementByReference(TypeAppointement.getReference());
+        if (typeAppointementFounded != null) {
         typeAppointementDao.deleteTypeAppointement(TypeAppointement);
         return 1;
+    }
+        else {
+        return -1;
+    }
     }
     public List<TypeAppointement> findAllTypeAppointement(){
         return typeAppointementDao.findAllTypeAppointement();
