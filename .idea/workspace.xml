@@ -4,6 +4,7 @@
     <list default="true" id="829bd391-169f-4282-8d23-b0eeadb28bdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/AddAppTest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/AddAppTest.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +43,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Studies/jfoenix-8.0.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/mirrane/controller/AddAppointement.fxml" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -150,38 +151,38 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="458" y="84" key="DetectedRootsChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1586103762777" />
-    <state x="484" y="124" key="FileChooserDialogImpl" timestamp="1586103826079">
+    <state x="484" y="124" key="FileChooserDialogImpl" timestamp="1586105172450">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="484" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586103826079" />
-    <state width="996" height="610" key="GridCell.Tab.0.bottom" timestamp="1586104197137">
+    <state x="484" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586105172450" />
+    <state width="937" height="610" key="GridCell.Tab.0.bottom" timestamp="1586108007106">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="91" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586046827913" />
-    <state width="996" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586104197137" />
-    <state width="996" height="610" key="GridCell.Tab.0.center" timestamp="1586104197137">
+    <state width="937" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586108007106" />
+    <state width="937" height="610" key="GridCell.Tab.0.center" timestamp="1586108007106">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="91" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586046827913" />
-    <state width="996" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586104197137" />
-    <state width="996" height="610" key="GridCell.Tab.0.left" timestamp="1586104197136">
+    <state width="937" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586108007106" />
+    <state width="937" height="610" key="GridCell.Tab.0.left" timestamp="1586108007106">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="91" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586046827913" />
-    <state width="996" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586104197136" />
-    <state width="996" height="610" key="GridCell.Tab.0.right" timestamp="1586104197137">
+    <state width="937" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586108007106" />
+    <state width="937" height="610" key="GridCell.Tab.0.right" timestamp="1586108007106">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="91" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586046827913" />
-    <state width="996" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586104197137" />
+    <state width="937" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586108007106" />
     <state x="213" y="22" key="Maven.ArtifactSearchDialog" timestamp="1586035816708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="22" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1586035816708" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1586103836176">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1586105215483">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586103836176" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586105215483" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586046799835">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
