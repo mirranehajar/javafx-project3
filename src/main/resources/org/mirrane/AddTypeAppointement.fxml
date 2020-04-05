@@ -39,11 +39,11 @@
                   </Label>
                </children>
             </AnchorPane>
-            <TableView layoutX="14.0" layoutY="59.0" prefHeight="370.0" prefWidth="331.0">
+            <TableView fx:id="typeAppointementTableView" layoutX="14.0" layoutY="59.0" prefHeight="370.0" prefWidth="331.0">
                <columns>
-                  <TableColumn prefWidth="96.0" text="Reference" />
-                  <TableColumn prefWidth="124.0" text="Libelle" />
-                  <TableColumn prefWidth="110.0" text="Price" />
+                  <TableColumn fx:id="references" prefWidth="96.0" text="Reference" />
+                  <TableColumn fx:id="libelles" prefWidth="124.0" text="Libelle" />
+                  <TableColumn fx:id="prices" prefWidth="110.0" text="Price" />
                </columns>
             </TableView>
             <Label layoutX="411.0" layoutY="46.0" text="Add a type Appointement here">
