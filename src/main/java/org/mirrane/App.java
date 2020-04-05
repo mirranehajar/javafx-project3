@@ -28,13 +28,13 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
 
-
+/*
 
        PatientService  patientService = new PatientService();
 
        TypeAppointementService typeAppointementService = new TypeAppointementService();
         TypeAppointement typeAppointement = new TypeAppointement("ref2","lib1", (double) 12);
-        typeAppointementService.saveTypeAppointement(typeAppointement);
+        typeAppointementService.saveTypeAppointement(typeAppointement);*/
 
       /*  TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference("ref1");
         System.out.println(typeAppointement);*/
