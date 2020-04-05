@@ -24,16 +24,16 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-       /* scene = new Scene(loadFXML("primary"));
+        scene = new Scene(loadFXML("AddAppTest"));
         stage.setScene(scene);
         stage.show();
 
-        */
 
-      PatientService  patientService = new PatientService();
-        TypeAppointementService typeAppointementService = new TypeAppointementService();
-       typeAppointementService.saveTypeAppointement(new TypeAppointement("ref2","lib1", 12));
-        typeAppointementService.findTypeAppointementByReference("ref1");
+
+      //PatientService  patientService = new PatientService();
+       // TypeAppointementService typeAppointementService = new TypeAppointementService();
+      // typeAppointementService.saveTypeAppointement(new TypeAppointement("ref2","lib1", 12));
+        //typeAppointementService.findTypeAppointementByReference("ref1");
         //TypeAppointementService typeAppointementService = new TypeAppointementService();
        // TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference("ref1");
         //System.out.println(typeAppointement);

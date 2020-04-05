@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="829bd391-169f-4282-8d23-b0eeadb28bdf" name="Default Changelist" comment="" />
+    <list default="true" id="829bd391-169f-4282-8d23-b0eeadb28bdf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +18,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -38,7 +42,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="D:/Studies/jfoenix-8.0.2.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -133,38 +138,50 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="531" y="258" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.738@0.0.1366.738" timestamp="1586097463062" />
+    <state x="534" y="80" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1586103592848">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="534" y="80" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1366.738@0.0.1366.738" timestamp="1586103592848" />
     <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586035945074">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586035945074" />
-    <state width="996" height="610" key="GridCell.Tab.0.bottom" timestamp="1586099896167">
+    <state x="458" y="84" key="DetectedRootsChooserDialog" timestamp="1586103762777">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="458" y="84" key="DetectedRootsChooserDialog/0.0.1366.738@0.0.1366.738" timestamp="1586103762777" />
+    <state x="484" y="124" key="FileChooserDialogImpl" timestamp="1586103826079">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="484" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586103826079" />
+    <state width="996" height="610" key="GridCell.Tab.0.bottom" timestamp="1586104197137">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="91" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586046827913" />
-    <state width="996" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586099896167" />
-    <state width="996" height="610" key="GridCell.Tab.0.center" timestamp="1586099896167">
+    <state width="996" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586104197137" />
+    <state width="996" height="610" key="GridCell.Tab.0.center" timestamp="1586104197137">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="91" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586046827913" />
-    <state width="996" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586099896167" />
-    <state width="996" height="610" key="GridCell.Tab.0.left" timestamp="1586099896167">
+    <state width="996" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586104197137" />
+    <state width="996" height="610" key="GridCell.Tab.0.left" timestamp="1586104197136">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="91" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586046827913" />
-    <state width="996" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586099896167" />
-    <state width="996" height="610" key="GridCell.Tab.0.right" timestamp="1586099896167">
+    <state width="996" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586104197136" />
+    <state width="996" height="610" key="GridCell.Tab.0.right" timestamp="1586104197137">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="91" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586046827913" />
-    <state width="996" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586099896167" />
+    <state width="996" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586104197137" />
     <state x="213" y="22" key="Maven.ArtifactSearchDialog" timestamp="1586035816708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="22" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1586035816708" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1585930887257">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1586103836176">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585930887257" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586103836176" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586046799835">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -173,10 +190,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="378" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586006254784" />
-    <state x="383" y="160" key="git4idea.merge.GitPullDialog" timestamp="1586102639182">
+    <state x="383" y="160" key="git4idea.merge.GitPullDialog" timestamp="1586102867018">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="383" y="160" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1586102639182" />
+    <state x="383" y="160" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1586102867018" />
     <state x="425" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586098643117">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
