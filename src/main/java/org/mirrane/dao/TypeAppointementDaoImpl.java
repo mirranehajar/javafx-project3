@@ -1,6 +1,5 @@
 package org.mirrane.dao;
 
-import org.mirrane.entity.Appointement;
 import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
@@ -56,7 +55,9 @@ public class TypeAppointementDaoImpl implements TypeAppointementDao {
     @Override
     public TypeAppointement findTypeAppointementByReference(String reference) {
         TypedQuery<TypeAppointement> query =  entityManager.createQuery("SELECT ta FROM TypeAppointement ta WHERE ta.reference = '" + reference + "'", TypeAppointement.class);
+        if (query.getSingleResult() != null)
         return query.getSingleResult();
+        else return null;
     }
 
     @Override

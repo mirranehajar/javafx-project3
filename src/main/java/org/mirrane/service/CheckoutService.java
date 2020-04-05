@@ -20,7 +20,6 @@ public class CheckoutService {
             Appointement appointementFounded =  appointementService.findAppointementByReference(checkout.getCurrentAppointement().getReference());
             appointementFounded.setStateAppointement("paid");
             appointementService.saveAppointement(checkout.getNextAppointement());
-            appointementFounded.setCheckout(checkout);
         checkoutDao.saveCheckout(checkout);
 
         return 1;
