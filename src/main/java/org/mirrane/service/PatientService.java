@@ -50,6 +50,10 @@ public class PatientService {
 
     }
 
+    public Patient getPatientByCin(String cin) {
+        return patientDao.getPatientByCin(cin);
+    }
+
     public boolean isPresent(int id) {
         return patientDao.isPresent(id);
     }

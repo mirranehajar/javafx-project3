@@ -3,8 +3,10 @@ package org.mirrane.dao;
 import org.mirrane.entity.Assistant;
 import org.mirrane.entity.Client;
 import org.mirrane.entity.Patient;
+import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 public class PatientDaoImp implements PatientDao {
@@ -53,8 +55,8 @@ public class PatientDaoImp implements PatientDao {
 
     @Override
     public Patient getPatientByCin(String cin) {
-        String query = "SELECT Patient FROM Patient p WHERE p.cin='" + cin + "'";
-        return (Patient) entityManager.createQuery(query).getSingleResult();
+        TypedQuery<Patient> query =  entityManager.createQuery("SELECT p FROM Patient p WHERE p.cin = '" + cin + "'", Patient.class);
+        return query.getSingleResult();
     }
 
     @Override

@@ -48,6 +48,10 @@ public class AssistantService {
         }
     }
 
+    public Assistant getAssistantByCin(String cin) {
+        return assistantDao.getAssistantByCin(cin);
+    }
+
     public boolean isPresent(int id) {
         return assistantDao.isPresent(id);
     }

@@ -51,6 +51,10 @@ public class DoctorService {
         }
     }
 
+    public Doctor getDoctorByCin(String cin) {
+        return doctorDao.getDoctorByCin(cin);
+    }
+
     public boolean isPresent(int id) {
 
         return doctorDao.isPresent(id);
