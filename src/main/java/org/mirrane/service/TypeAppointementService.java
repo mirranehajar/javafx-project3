@@ -9,9 +9,21 @@ import java.util.List;
 public class TypeAppointementService {
     TypeAppointementDao typeAppointementDao;
 
+    public TypeAppointement getTypeAppointementById(int id) {
+        TypeAppointement typeAppointement;
+
+        if (typeAppointementDao.isPresent(id)) {
+            typeAppointement = typeAppointementDao.getTypeAppointementById(id);
+        } else {
+            typeAppointement = null;
+        }
+
+        return typeAppointement;
+    }
     public TypeAppointementService() {
         this.typeAppointementDao = new TypeAppointementDaoImpl();
     }
+
     public int saveTypeAppointement(TypeAppointement typeAppointement){
         TypeAppointement typeAppointementFounded = findTypeAppointementByReference(typeAppointement.getReference());
         if (typeAppointementFounded == null) {

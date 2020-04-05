@@ -1,11 +1,9 @@
 package org.mirrane.service;
 
+import org.mirrane.App;
 import org.mirrane.dao.AppointementDao;
 import org.mirrane.dao.AppointementDaoImpl;
-import org.mirrane.entity.Appointement;
-import org.mirrane.entity.Doctor;
-import org.mirrane.entity.Patient;
-import org.mirrane.entity.TypeAppointement;
+import org.mirrane.entity.*;
 
 import java.util.Date;
 import java.util.List;
@@ -13,6 +11,17 @@ import java.util.List;
 public class AppointementService {
     AppointementDao appointementDao;
 
+    public Appointement getAppointementById(int id) {
+        Appointement appointement;
+
+        if (appointementDao.isPresent(id)) {
+            appointement = appointementDao.getAppointementById(id);
+        } else {
+            appointement = null;
+        }
+
+        return appointement;
+    }
     public AppointementService() {
         this.appointementDao = new AppointementDaoImpl();
     }

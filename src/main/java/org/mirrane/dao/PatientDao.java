@@ -1,6 +1,6 @@
 package org.mirrane.dao;
 
-import org.mirrane.entity.Client;
+
 import org.mirrane.entity.Patient;
 
 import java.util.List;

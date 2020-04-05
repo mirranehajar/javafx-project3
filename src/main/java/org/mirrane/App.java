@@ -31,16 +31,16 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
 
-/*
+
 
        PatientService  patientService = new PatientService();
 
        TypeAppointementService typeAppointementService = new TypeAppointementService();
-        TypeAppointement typeAppointement = new TypeAppointement("ref2","lib1", (double) 12);
-        typeAppointementService.saveTypeAppointement(typeAppointement);*/
+     TypeAppointement typeAppointement = new TypeAppointement("ref3","lib1", (double) 12);
+       typeAppointementService.saveTypeAppointement(typeAppointement);
 
-      /*  TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference("ref1");
-        System.out.println(typeAppointement);*/
+       TypeAppointement typeAppointementFounded = typeAppointementService.findTypeAppointementByReference("ref1");
+        System.out.println(typeAppointementFounded);
 /*
         System.out.println("1------------------------------------------------------");
 

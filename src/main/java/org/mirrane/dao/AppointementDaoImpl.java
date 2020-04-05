@@ -50,6 +50,15 @@ public class AppointementDaoImpl implements AppointementDao {
     }
 
     @Override
+    public Appointement getAppointementById(Integer id) {
+        entityManager.getTransaction().begin();
+        Appointement Appointement = entityManager.find(Appointement.class, id);
+        entityManager.getTransaction().commit();
+
+        return Appointement;
+    }
+
+    @Override
     public List<Appointement> findAllAppointement() {
         entityManager.getTransaction().begin();
         List<Appointement> appointements = entityManager.createQuery("FROM Appointement ", Appointement.class).getResultList();
@@ -102,7 +111,6 @@ public class AppointementDaoImpl implements AppointementDao {
     @Override
     public boolean isPresent(Integer id) {
         Appointement appointement = entityManager.find(Appointement.class, id);
-        if (appointement == null) return false;
-        else return true;
+        return appointement != null;
     }
 }

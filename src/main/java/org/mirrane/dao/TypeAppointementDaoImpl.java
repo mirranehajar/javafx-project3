@@ -1,8 +1,10 @@
 package org.mirrane.dao;
 
+import org.mirrane.entity.Appointement;
 import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -45,6 +47,15 @@ public class TypeAppointementDaoImpl implements TypeAppointementDao {
     }
 
     @Override
+    public TypeAppointement getTypeAppointementById(Integer id) {
+        entityManager.getTransaction().begin();
+        TypeAppointement  typeAppointement = entityManager.find(TypeAppointement.class, id);
+        entityManager.getTransaction().commit();
+
+        return typeAppointement;
+    }
+
+    @Override
     public List<TypeAppointement> findAllTypeAppointement() {
         entityManager.getTransaction().begin();
         List<TypeAppointement> typeAppointements = entityManager.createQuery("FROM TypeAppointement ", TypeAppointement.class).getResultList();
@@ -54,10 +65,13 @@ public class TypeAppointementDaoImpl implements TypeAppointementDao {
 
     @Override
     public TypeAppointement findTypeAppointementByReference(String reference) {
-        TypedQuery<TypeAppointement> query =  entityManager.createQuery("SELECT ta FROM TypeAppointement ta WHERE ta.reference = '" + reference + "'", TypeAppointement.class);
-        if (query.getSingleResult() != null)
-        return query.getSingleResult();
-        else return null;
+        try {
+            TypedQuery<TypeAppointement> query = entityManager.createQuery("SELECT ta FROM TypeAppointement ta WHERE ta.reference = '" + reference + "'", TypeAppointement.class);
+            return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
+
     }
 
     @Override
@@ -75,7 +89,6 @@ public class TypeAppointementDaoImpl implements TypeAppointementDao {
     @Override
     public boolean isPresent(Integer id) {
         TypeAppointement typeAppointement = entityManager.find(TypeAppointement.class, id);
-        if (typeAppointement == null) return false;
-        else return true;
+        return typeAppointement != null;
     }
 }
