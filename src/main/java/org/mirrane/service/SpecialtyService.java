@@ -48,6 +48,10 @@ public class SpecialtyService {
         }
     }
 
+    public Specialty getSpecialtyReference(String reference) {
+        return specialtyDao.getSpecialtyReference(reference);
+    }
+
     public boolean isPresent(int id) {
         return specialtyDao.isPresent(id);
     }

@@ -1,11 +1,9 @@
 package org.mirrane.dao;
 
-import org.mirrane.entity.Appointement;
-import org.mirrane.entity.Assistant;
-import org.mirrane.entity.Client;
-import org.mirrane.entity.Doctor;
+import org.mirrane.entity.*;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 public class AssistantDaoImp implements AssistantDao {
@@ -52,8 +50,8 @@ public class AssistantDaoImp implements AssistantDao {
 
     @Override
     public Assistant getAssistantByCin(String cin) {
-        String query = "SELECT Assistant FROM Assistant a WHERE a.cin='" + cin + "'";
-        return (Assistant) entityManager.createQuery(query).getSingleResult();
+        TypedQuery<Assistant> query =  entityManager.createQuery("SELECT a FROM Assistant a WHERE p.cin = '" + cin + "'", Assistant.class);
+        return query.getSingleResult();
     }
 
     @Override

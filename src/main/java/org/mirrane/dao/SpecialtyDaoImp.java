@@ -3,8 +3,10 @@ package org.mirrane.dao;
 import org.mirrane.entity.Assistant;
 import org.mirrane.entity.Doctor;
 import org.mirrane.entity.Specialty;
+import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 public class SpecialtyDaoImp implements  SpecialtyDao {
@@ -53,8 +55,8 @@ public class SpecialtyDaoImp implements  SpecialtyDao {
 
     @Override
     public Specialty getSpecialtyReference(String reference) {
-        String query = "SELECT Specialty FROM Specialty s WHERE s.refecence='" + reference + "'";
-        return (Specialty) entityManager.createQuery(query).getSingleResult();
+        TypedQuery<Specialty> query =  entityManager.createQuery("SELECT s FROM Specialty s WHERE s.reference = '" + reference + "'", Specialty.class);
+        return query.getSingleResult();
     }
 
     @Override

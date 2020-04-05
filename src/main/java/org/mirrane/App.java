@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.mirrane.entity.Patient;
 import org.mirrane.entity.TypeAppointement;
 import org.mirrane.service.PatientService;
 import org.mirrane.service.TypeAppointementService;
@@ -29,16 +30,18 @@ public class App extends Application {
 
         */
 
-      /* PatientService  patientService = new PatientService();
+      PatientService  patientService = new PatientService();
         TypeAppointementService typeAppointementService = new TypeAppointementService();
-        typeAppointementService.saveTypeAppointement(new TypeAppointement("ref1","lib1", 12));*/
-        TypeAppointementService typeAppointementService = new TypeAppointementService();
-        TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference("ref1");
-        System.out.println(typeAppointement);
-/*
-        System.out.println("1------------------------------------------------------");
+       typeAppointementService.saveTypeAppointement(new TypeAppointement("ref2","lib1", 12));
+        typeAppointementService.findTypeAppointementByReference("ref1");
+        //TypeAppointementService typeAppointementService = new TypeAppointementService();
+       // TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference("ref1");
+        //System.out.println(typeAppointement);
 
-        patientService.addPatient(new Patient(1,"hajar","htdty","hh","jj",06545455454,"fnhtd","hi8"));
+     /*   System.out.println("1------------------------------------------------------");
+
+                patientService.addPatient(new Patient("78i","htdty","hh","kk",985764,"fnhtd"));
+                patientService.getPatientByCin("78i");
         System.out.println("2------------------------------------------------------");
         patientService.getPatients().forEach(patient -> System.out.println(patient.toString()));
         System.out.println("3------------------------------------------------------");

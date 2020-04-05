@@ -14,7 +14,7 @@ public class TypeAppointementService {
     }
     public int saveTypeAppointement(TypeAppointement typeAppointement){
         TypeAppointement typeAppointementFounded = findTypeAppointementByReference(typeAppointement.getReference());
-        if (typeAppointementFounded != null) {
+        if (typeAppointementFounded == null) {
             typeAppointementDao.saveTypeAppointement(typeAppointement);
 
             return 1;
