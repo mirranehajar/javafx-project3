@@ -11,6 +11,7 @@ import org.mirrane.service.TypeAppointementService;
 
 import javax.persistence.EntityManager;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * JavaFX App
@@ -31,7 +32,7 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
 
-
+/*
 
        PatientService  patientService = new PatientService();
 
@@ -40,7 +41,8 @@ public class App extends Application {
        typeAppointementService.saveTypeAppointement(typeAppointement);
 
        TypeAppointement typeAppointementFounded = typeAppointementService.findTypeAppointementByReference("ref1");
-        System.out.println(typeAppointementFounded);
+        System.out.println(typeAppointementFounded);*/
+
 /*
         System.out.println("1------------------------------------------------------");
 
