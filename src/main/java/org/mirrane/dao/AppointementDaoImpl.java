@@ -6,6 +6,7 @@ import org.mirrane.entity.Patient;
 import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.Date;
 import java.util.List;
@@ -68,44 +69,72 @@ public class AppointementDaoImpl implements AppointementDao {
 
     @Override
     public Appointement findAppointementByReference(String reference) {
+        try{
         TypedQuery<Appointement> query =  entityManager.createQuery("SELECT a FROM Appointement a WHERE a.reference = '" + reference + "'", Appointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
     public Appointement findAppointementByDateAppointement(Date dateAppointement) {
+        try{
         TypedQuery<Appointement> query =  entityManager.createQuery("SELECT a FROM Appointement a WHERE a.dateAppointement = '" + dateAppointement + "'", Appointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
     public Appointement findAppointementByHourAppointement(Date hourAppointement) {
+        try{
         TypedQuery<Appointement> query =  entityManager.createQuery("SELECT a FROM Appointement a WHERE a.hourAppointement = '" + hourAppointement + "'", Appointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
     public Appointement findAppointementByStateAppointement(String StateAppointement) {
+        try{
         TypedQuery<Appointement> query =  entityManager.createQuery("SELECT a FROM Appointement a WHERE a.stateAppointement = '" + StateAppointement + "'", Appointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
     public Appointement findAppointementByTypeAppointement(TypeAppointement typeAppointement) {
+        try{
         TypedQuery<Appointement> query =  entityManager.createQuery("SELECT a FROM Appointement a WHERE a.typeAppointement = '" + typeAppointement + "'", Appointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
     public Appointement findAppointementByPatient(Patient patient) {
+        try{
         TypedQuery<Appointement> query =  entityManager.createQuery("SELECT a FROM Appointement a WHERE a.patient = '" + patient + "'", Appointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
     public Appointement findAppointementByDoctor(Doctor doctor) {
+        try{
         TypedQuery<Appointement> query =  entityManager.createQuery("SELECT a FROM Appointement a WHERE a.doctor = '" + doctor + "'", Appointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override

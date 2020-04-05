@@ -66,4 +66,7 @@ public class TypeAppointementService {
     public TypeAppointement findTypeAppointementByReference(String reference){
         return typeAppointementDao.findTypeAppointementByReference(reference);
     }
+    public TypeAppointement findTypeAppointementByLibelle(String libelle){
+        return typeAppointementDao.findTypeAppointementByLibelle(libelle);
+    }
 }

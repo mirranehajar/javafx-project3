@@ -76,14 +76,22 @@ public class TypeAppointementDaoImpl implements TypeAppointementDao {
 
     @Override
     public TypeAppointement findTypeAppointementByLibelle(String libelle) {
+        try{
         TypedQuery<TypeAppointement> query =  entityManager.createQuery("SELECT ta FROM TypeAppointement ta WHERE ta.libelle = '" + libelle + "'", TypeAppointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
     public TypeAppointement findTypeAppointementByPrice(float price) {
+        try{
         TypedQuery<TypeAppointement> query =  entityManager.createQuery("SELECT ta FROM TypeAppointement ta WHERE ta.price = '" + price + "'", TypeAppointement.class);
         return query.getSingleResult();
+        }catch (NoResultException e) {
+            return null;
+        }
     }
 
     @Override
