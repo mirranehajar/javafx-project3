@@ -11,7 +11,6 @@ import org.mirrane.service.TypeAppointementService;
 
 import javax.persistence.EntityManager;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * JavaFX App
@@ -24,14 +23,10 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-
-
-
-
         scene = new Scene(loadFXML("AddTypeAppointement"));
         stage.setScene(scene);
         stage.show();
-
+    }
 /*
 
        PatientService  patientService = new PatientService();
@@ -42,7 +37,6 @@ public class App extends Application {
 
        TypeAppointement typeAppointementFounded = typeAppointementService.findTypeAppointementByReference("ref1");
         System.out.println(typeAppointementFounded);*/
-
 /*
         System.out.println("1------------------------------------------------------");
 
@@ -59,6 +53,8 @@ public class App extends Application {
         patientService.getPatients().forEach(patient -> System.out.println(patient.toString()));
 */
 
+    static void setRoot(String fxml) throws IOException {
+        scene.setRoot(loadFXML(fxml));
     }
 
     private static Parent loadFXML(String fxml) throws IOException {

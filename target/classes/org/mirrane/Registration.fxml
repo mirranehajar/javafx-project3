@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="615.0" style="-fx-background-color: #288E88;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InscriptionController">
+   <children>
+      <AnchorPane layoutX="351.0" layoutY="8.0" prefHeight="384.0" prefWidth="257.0" style="-fx-background-color: #A4ABAA;">
+         <children>
+            <ChoiceBox layoutX="131.0" layoutY="105.0" prefHeight="25.0" prefWidth="118.0" />
+            <TextField layoutX="131.0" layoutY="272.0" prefHeight="63.0" prefWidth="118.0" />
+            <Text layoutX="12.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="81.13671875" />
+            <Text layoutX="12.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="81.13671875" />
+            <Text layoutX="12.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIN" wrappingWidth="81.13671875" />
+            <Text layoutX="12.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe" wrappingWidth="81.13671875" />
+            <Text layoutX="12.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" wrappingWidth="81.13671875" />
+            <Text layoutX="14.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="81.13671875" />
+            <Text layoutX="14.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="81.13671875" />
+            <Text layoutX="14.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm password" wrappingWidth="105.13671875" />
+            <Text layoutX="14.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="81.13671875" />
+            <Button layoutX="78.0" layoutY="342.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="118.0" style="-fx-background-color: #288E88;" text="Sign up" />
+            <TextField accessibleText="jjn" layoutX="129.0" layoutY="11.0" prefHeight="25.0" prefWidth="125.0" />
+            <TextField layoutX="129.0" layoutY="42.0" prefHeight="25.0" prefWidth="125.0" />
+            <TextField layoutX="128.0" layoutY="73.0" prefHeight="25.0" prefWidth="125.0" />
+            <PasswordField layoutX="128.0" layoutY="201.0" prefHeight="25.0" prefWidth="125.0" />
+            <TextField layoutX="129.0" layoutY="138.0" prefHeight="25.0" prefWidth="125.0" />
+            <TextField layoutX="128.0" layoutY="169.0" prefHeight="25.0" prefWidth="125.0" />
+            <PasswordField layoutX="128.0" layoutY="235.0" prefHeight="25.0" prefWidth="125.0" />
+            <GridPane layoutX="84.0" layoutY="40.0">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane layoutX="-1.0" layoutY="10.0" prefHeight="90.0" prefWidth="257.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Accordion layoutX="361.0" layoutY="44.0" />
+      <Button layoutX="111.0" layoutY="275.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="118.0" text="Sign in" />
+      <Label layoutX="86.0" layoutY="44.0" text="Welcom To H2" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextArea layoutX="45.0" layoutY="118.0" prefHeight="48.0" prefWidth="250.0" text="You can sign up here, so you can take an appointement, and keep track of it. " />
+      <Label layoutX="2.0" layoutY="207.0" text="You already have an account?" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
