@@ -45,6 +45,6 @@ public class PrimaryController {
         client.setName(nameTextField.getText());
         clientService.addClient(client);
 
-        //App.setRoot("secondary");
+       // App.setRoot("secondary");
     }
 }
