@@ -43,8 +43,7 @@ public class SpecialityController implements Initializable {
         specialty.setLibelle(libelle.getText());
         specialty.setReference(reference.getText());
         specialtyService.addSpecialty(specialty);
-        reference = new JFXTextField();
-        libelle = new JFXTextField();
+        App.setRoot("Speciality");
 
     }
 

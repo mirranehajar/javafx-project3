@@ -32,10 +32,6 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
 
-
-        scene = new Scene(loadFXML("AddTypeAppointement"));
-        stage.setScene(scene);
-        stage.show();
     }
 /*
 >>>>>>> e27ce07993b6e4d3ef9dabb2b2985f7dd3044d27
