@@ -1,32 +1,28 @@
 package org.mirrane;
 
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class LoginController {
+public class LoginController implements Initializable {
+
     @FXML
-    public void switchToLogin() throws IOException {
-        App.setRoot("Login");
-    }
+    private JFXTextField mail;
     @FXML
-    public void switchToAppointment() throws IOException {
-        App.setRoot("AddAppointement");
-    }
-    @FXML
-    public void switchToAddPerson() throws IOException {
-        App.setRoot("AddPerson");
-    }
-    @FXML
-    public void switchToTypeApp() throws IOException {
-        App.setRoot("AddTypeAppointement");
-    }
+    private JFXPasswordField password;
+
     @FXML
     public void switchToRegistration() throws IOException {
         App.setRoot("Registration");
     }
-    @FXML
-    public void switchToSpecialty() throws IOException {
-        App.setRoot("Speciality");
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
     }
 }
