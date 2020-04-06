@@ -1,14 +1,22 @@
 package org.mirrane;
 
 import com.jfoenix.controls.JFXTextField;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import org.mirrane.entity.Patient;
 import org.mirrane.entity.Specialty;
 import org.mirrane.service.PatientService;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
 
-public class AddPersonnController {
+public class AddPersonnController implements Initializable {
     PatientService patientService;
 
     @FXML
@@ -23,6 +31,20 @@ public class AddPersonnController {
     private JFXTextField phoneNumber;
     @FXML
     private JFXTextField adresse;
+    @FXML
+    private TableView<Patient> patientTableView = new TableView<>();
+    @FXML
+    private javafx.scene.control.TableColumn<Patient, String> cins;
+    @FXML
+    private javafx.scene.control.TableColumn<Patient, String> firstNames;
+    @FXML
+    private javafx.scene.control.TableColumn<Patient, String> lastNames;
+    @FXML
+    private javafx.scene.control.TableColumn<Patient, String> mails;
+    @FXML
+    private javafx.scene.control.TableColumn<Patient, String> phoneNumbers;
+    @FXML
+    private javafx.scene.control.TableColumn<Patient, String> adresses;
 
 
     @FXML
@@ -67,4 +89,32 @@ public class AddPersonnController {
 
     }
 
-}
+    public ObservableList<Patient> getList() {
+        return list;
+    }
+
+    public void setList(ObservableList<Patient> list) {
+        this.list = list;
+    }
+
+    ObservableList<Patient> list = FXCollections.observableArrayList();
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        List<Patient> patients = patientService.getPatients();
+        for(int i=0; i<patients.size();i++){
+            list.add(new Patient(patients.get(i).getCin(), patients.get(i).getFirstName(), patients.get(i).getLastName(), patients.get(i).getMail(), patients.get(i).getPhoneNumber(),patients.get(i).getAddress()));
+        }
+
+        cins.setCellValueFactory(new PropertyValueFactory<>("cin"));
+        firstNames.setCellValueFactory(new PropertyValueFactory<>("firstName"));
+        lastNames.setCellValueFactory(new PropertyValueFactory<>("lastName"));
+        mails.setCellValueFactory(new PropertyValueFactory<>("mail"));
+        phoneNumbers.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
+        adresses.setCellValueFactory(new PropertyValueFactory<>("adresse"));
+        patientTableView.setItems(list);
+
+
+    }
+    }
+

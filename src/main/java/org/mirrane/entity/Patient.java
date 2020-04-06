@@ -19,7 +19,7 @@ public class Patient {
 
     private String mail;
 
-    private int phoneNumber;
+    private String phoneNumber;
 
     private String address;
 
@@ -27,7 +27,7 @@ public class Patient {
     public Patient() {
     }
 
-    public Patient( String cin, String lastName, String firstName, String mail, int phoneNumber, String address) {
+    public Patient( String cin, String lastName, String firstName, String mail, String phoneNumber, String address) {
         this.cin = cin;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -76,7 +76,7 @@ public class Patient {
         this.mail = mail;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 

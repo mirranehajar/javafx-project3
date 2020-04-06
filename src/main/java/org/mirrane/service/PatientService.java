@@ -38,7 +38,7 @@ public class PatientService {
         if (patientDao.isPresent(id)) {
             patient = patientDao.getPatientById(id);
         } else {
-            patient = new Patient("0","0","0","0",0,"0");
+            patient = new Patient("0","0","0","0","0","0");
         }
 
         return patient;
