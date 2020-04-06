@@ -61,6 +61,16 @@ public class AssistantDaoImp implements AssistantDao {
     }
 
     @Override
+    public Assistant getAssistantByMail(String mail) {
+        try {
+            TypedQuery<Assistant> query = entityManager.createQuery("SELECT a FROM Assistant a WHERE p.mail = '" + mail + "'", Assistant.class);
+            return query.getSingleResult();
+        }catch (NoResultException e){
+            return  null;
+        }
+    }
+
+    @Override
     public void updateAssistant(Assistant assistant) {
 
         entityManager.getTransaction().begin();

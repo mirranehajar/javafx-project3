@@ -64,6 +64,16 @@ public class DoctorDaoImp implements DoctorDao {
     }
 
     @Override
+    public Doctor getDoctorByMail(String mail) {
+        try {
+            TypedQuery<Doctor> query = entityManager.createQuery("SELECT d FROM Doctor d WHERE d.mail = '" + mail + "'", Doctor.class);
+            return query.getSingleResult();
+        }catch (NoResultException e){
+            return  null;
+        }
+    }
+
+    @Override
     public void updateDoctor(Doctor doctor) {
         entityManager.getTransaction().begin();
         entityManager.merge(doctor);

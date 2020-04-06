@@ -45,10 +45,15 @@ public class PatientService {
     }
 
     public void updatePatient(Patient patient) {
-        if (patientDao.isPresent(patient.getId())) {
-            patientDao.updatePatient(patient);
-        } else {
-            patientDao.addPatient(patient);
+        Patient patientFouded = getPatientByCin(patient.getCin());
+        if (patientFouded!=null) {
+            patientFouded.setCin(patient.getCin());
+            patientFouded.setFirstName(patient.getFirstName());
+            patientFouded.setLastName(patient.getLastName());
+            patientFouded.setMail(patient.getMail());
+            patientFouded.setAddress(patient.getAddress());
+            patientFouded.setPhoneNumber(patient.getPhoneNumber());
+            patientDao.updatePatient(patientFouded);
         }
     }
 
