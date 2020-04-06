@@ -47,10 +47,10 @@ public class TypeAppointementService {
             return -1;
         }
     }
-    public int deleteTypeAppointement(TypeAppointement TypeAppointement){
-        TypeAppointement typeAppointementFounded = findTypeAppointementByReference(TypeAppointement.getReference());
+    public int deleteTypeAppointement(TypeAppointement typeAppointement){
+        TypeAppointement typeAppointementFounded = findTypeAppointementByReference(typeAppointement.getReference());
         if (typeAppointementFounded != null) {
-        typeAppointementDao.deleteTypeAppointement(TypeAppointement);
+        typeAppointementDao.deleteTypeAppointement(typeAppointementFounded);
         return 1;
     }
         else {

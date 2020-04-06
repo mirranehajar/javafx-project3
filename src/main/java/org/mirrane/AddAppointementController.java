@@ -76,7 +76,7 @@ public class AddAppointementController implements Initializable {
         appointementService.saveAppointement(appointement);
         App.setRoot("AddAppointement");
     }
-    public void show() throws IOException{
+    public void show() {
         Appointement selectedAppointement = appointementTableView.getSelectionModel().getSelectedItem();
         reference.setText(selectedAppointement.getReference());
         dateAppointement.setValue(LocalDate.parse(selectedAppointement.getDateAppointement()));
@@ -97,14 +97,17 @@ public class AddAppointementController implements Initializable {
         System.out.println(typeAppointement);
         App.setRoot("AddTypeAppointemkent");
     }
+    public void delete() throws IOException {
+        Appointement selectedAppointement = appointementTableView.getSelectionModel().getSelectedItem();
+        int i = appointementService.deleteAppointement(selectedAppointement);
+        System.out.println(i);
+        System.out.println(selectedAppointement);
+        App.setRoot("AddTypeAppointement");
+    }
 
     @FXML
     public void switchToLogin() throws IOException {
         App.setRoot("Login");
-    }
-    @FXML
-    public void switchToAppointment() throws IOException {
-        App.setRoot("AddAppointement");
     }
     @FXML
     public void switchToAddPerson() throws IOException {
@@ -115,10 +118,6 @@ public class AddAppointementController implements Initializable {
         App.setRoot("AddTypeAppointement");
     }
     @FXML
-    public void switchToRegistration() throws IOException {
-        App.setRoot("Registration");
-    }
-    @FXML
     public void switchToSpecialty() throws IOException {
         App.setRoot("Speciality");
     }
@@ -126,8 +125,8 @@ public class AddAppointementController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         List<Appointement> appointements = appointementService.findAllAppointement();
-        for(int i=0; i<appointements.size();i++){
-            list.add(new Appointement(appointements.get(i).getReference(), appointements.get(i).getDateAppointement(), appointements.get(i).getHourAppointement(), appointements.get(i).getTypeAppointement(), appointements.get(i).getPatient(), appointements.get(i).getDoctor()));
+        for (Appointement appointement : appointements) {
+            list.add(new Appointement(appointement.getReference(), appointement.getDateAppointement(), appointement.getHourAppointement(), appointement.getTypeAppointement(), appointement.getPatient(), appointement.getDoctor()));
         }
         references.setCellValueFactory(new PropertyValueFactory<>("reference"));
         datesAppointement.setCellValueFactory(new PropertyValueFactory<>("dateAppointement"));
@@ -140,14 +139,14 @@ public class AddAppointementController implements Initializable {
         List<TypeAppointement> typeAppointements = typeAppointementService.findAllTypeAppointement();
         List<Patient> patients = patientService.getPatients();
         List<Doctor> doctors = doctorService.getDoctors();
-        for(int i=0; i<typeAppointements.size();i++){
-            listTypeAppointement.add(typeAppointements.get(i).getLibelle());
+        for (TypeAppointement appointement : typeAppointements) {
+            listTypeAppointement.add(appointement.getLibelle());
         }
-        for(int i=0; i<doctors.size();i++){
-            listDoctor.add(doctors.get(i).getCin());
+        for (Doctor item : doctors) {
+            listDoctor.add(item.getCin());
         }
-        for(int i=0; i<patients.size();i++){
-            listPatient.add(patients.get(i).getCin());
+        for (Patient value : patients) {
+            listPatient.add(value.getCin());
         }
         doctor.setItems(listDoctor);
         patient.setItems(listPatient);

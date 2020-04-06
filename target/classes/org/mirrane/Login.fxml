@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mirrane.LoginController">
    <children>
       <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #288E88;">
          <children>
@@ -19,8 +19,8 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <JFXPasswordField layoutX="62.0" layoutY="153.0" prefHeight="25.0" prefWidth="167.0" text="password" />
-                  <JFXTextField layoutX="62.0" layoutY="95.0" prefHeight="25.0" prefWidth="167.0" text="Example@gmail.com" />
+                  <JFXPasswordField fx:id="password" layoutX="62.0" layoutY="153.0" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #FFFFFF;" text="password" />
+                  <JFXTextField fx:id="mail" layoutX="62.0" layoutY="95.0" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #FFFFFF;" text="Example@gmail.com" />
                </children>
             </AnchorPane>
             <Label layoutX="99.0" layoutY="87.0" text="Welcom To H2" textFill="#fcfcfc">
@@ -38,7 +38,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <JFXButton buttonType="RAISED" layoutX="88.0" layoutY="233.0" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: #A4ABAA;" text="Sign Up" textFill="#f5f0f0" />
+            <JFXButton buttonType="RAISED" layoutX="88.0" layoutY="233.0" onAction="#switchToRegistration" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: #A4ABAA;" text="Sign Up" textFill="#f5f0f0" />
          </children>
       </AnchorPane>
    </children>

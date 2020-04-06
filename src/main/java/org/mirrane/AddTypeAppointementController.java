@@ -3,20 +3,16 @@ package org.mirrane;
 import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.ObservableListBase;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import org.mirrane.entity.Specialty;
 import org.mirrane.entity.TypeAppointement;
 import org.mirrane.service.TypeAppointementService;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.Connection;
 import java.util.List;
-import java.util.Observable;
 import java.util.ResourceBundle;
 
 
@@ -53,7 +49,7 @@ public class AddTypeAppointementController implements Initializable {
         App.setRoot("AddTypeAppointement");
 
     }
-    public void show() throws IOException{
+    public void show() {
         TypeAppointement selectedTypeAppointement = typeAppointementTableView.getSelectionModel().getSelectedItem();
         libelle.setText(selectedTypeAppointement.getLibelle());
         reference.setText(selectedTypeAppointement.getReference());
@@ -66,7 +62,13 @@ public class AddTypeAppointementController implements Initializable {
         typeAppointementService.updateTypeAppointement(typeAppointement);
         System.out.println(typeAppointement);
         App.setRoot("AddTypeAppointement");
-
+    }
+    public void delete() throws IOException {
+        TypeAppointement selectedTypeAppointement = typeAppointementTableView.getSelectionModel().getSelectedItem();
+       int i = typeAppointementService.deleteTypeAppointement(selectedTypeAppointement);
+        System.out.println(i);
+        System.out.println(selectedTypeAppointement);
+        App.setRoot("AddTypeAppointement");
     }
 
     @FXML
@@ -82,14 +84,6 @@ public class AddTypeAppointementController implements Initializable {
         App.setRoot("AddPerson");
     }
     @FXML
-    public void switchToTypeApp() throws IOException {
-        App.setRoot("AddTypeAppointement");
-    }
-    @FXML
-    public void switchToRegistration() throws IOException {
-        App.setRoot("Registration");
-    }
-    @FXML
     public void switchToSpecialty() throws IOException {
         App.setRoot("Speciality");
     }
@@ -98,8 +92,8 @@ public class AddTypeAppointementController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         List<TypeAppointement> typeAppointements = typeAppointementService.findAllTypeAppointement();
-        for(int i=0; i<typeAppointements.size();i++){
-            list.add(new TypeAppointement(typeAppointements.get(i).getReference(), typeAppointements.get(i).getLibelle(),typeAppointements.get(i).getPrice()));
+        for (TypeAppointement typeAppointement : typeAppointements) {
+            list.add(new TypeAppointement(typeAppointement.getReference(), typeAppointement.getLibelle(), typeAppointement.getPrice()));
         }
 
         references.setCellValueFactory(new PropertyValueFactory<>("reference"));
