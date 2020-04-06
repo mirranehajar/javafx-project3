@@ -48,16 +48,6 @@ public class SpecialityController implements Initializable {
 
     }
 
-    public void edit() throws  IOException{
-
-        Specialty specialty = new Specialty();
-        specialty.setLibelle(libelle.getText());
-        specialty.setReference(reference.getText());
-        specialtyService.updateSpecialty(specialty);
-        reference = new JFXTextField();
-        libelle = new JFXTextField();
-
-    }
 
     public void delete() throws IOException{
         Specialty specialty = new Specialty();
