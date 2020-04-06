@@ -1,5 +1,6 @@
 package org.mirrane;
 
+import com.jfoenix.controls.JFXTextArea;
 import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -30,7 +31,7 @@ public class AddPersonnController implements Initializable {
     @FXML
     private JFXTextField phoneNumber;
     @FXML
-    private JFXTextField adresse;
+    private JFXTextArea adresse;
     @FXML
     private TableView<Patient> patientTableView = new TableView<>();
     @FXML

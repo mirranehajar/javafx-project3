@@ -56,7 +56,6 @@ public class SpecialityController implements Initializable {
 
     public void delete() throws IOException {
         Specialty specialty = new Specialty();
-        specialty.setReference(deleteRef.getText());
         specialtyService.deleteSpecialty(specialty);
         App.setRoot("Speciality");
 
