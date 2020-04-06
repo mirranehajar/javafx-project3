@@ -41,10 +41,10 @@ public class PrimaryController {
     private void switchToSecondary() throws IOException {
 
 
-        Client client = new Client();
+        /*Client client = new Client();
         client.setName(nameTextField.getText());
-        clientService.addClient(client);
+        clientService.addClient(client);*/
 
-       // App.setRoot("secondary");
+       App.setRoot("secondary");
     }
 }

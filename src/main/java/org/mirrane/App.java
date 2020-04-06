@@ -21,12 +21,12 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
-    DoctorService doctorService = new DoctorService();
+   /* DoctorService doctorService = new DoctorService();
     TypeAppointementService typeAppointementService = new TypeAppointementService();
     PatientService patientService = new PatientService();
     AppointementService appointementService = new AppointementService();
     Appointement appointement = new Appointement("ref4",null, null, typeAppointementService.findTypeAppointementByLibelle("lib10"),patientService.getPatientByCin("hajar"), doctorService.getDoctorByCin("jkxdj45"));
-
+*/
     
 
 
@@ -34,10 +34,9 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        scene = new Scene(loadFXML("AddAppointement"));
+        scene = new Scene(loadFXML("AddPerson"));
         stage.setScene(scene);
         stage.show();
-appointementService.saveAppointement(appointement);
     }
 
 
