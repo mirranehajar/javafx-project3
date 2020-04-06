@@ -56,6 +56,8 @@ public class SpecialtyService {
     public void deleteSpecialty(Specialty specialty) {
         Specialty specialtyFounded = getSpecialtyReference(specialty.getReference());
         if (specialtyFounded!=null){
+            specialtyFounded.getReference();
+            specialtyFounded.getLibelle();
             specialtyDao.deleteSpecialty(specialty);
         }
     }

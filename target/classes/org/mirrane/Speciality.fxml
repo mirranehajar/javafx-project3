@@ -51,8 +51,9 @@
                   <MenuItem mnemonicParsing="false" text="Action 2" />
                </items>
             </MenuButton>
-            <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="379.0" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #A4ABAA;" text="Delete" />
+            <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="379.0" onAction="#delete" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #A4ABAA;" text="Delete" />
             <JFXButton layoutX="523.0" layoutY="335.0" onAction="#edit1" text="ediiiiiiiiiit" />
+            <JFXTextField fx:id="deleteRef" layoutX="134.0" layoutY="379.0" style="-fx-background-color: #FFFFFF;" />
          </children>
       </AnchorPane>
    </children>
