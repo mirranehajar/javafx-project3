@@ -56,7 +56,7 @@ public class DoctorDaoImp implements DoctorDao {
     @Override
     public Doctor getDoctorByCin(String cin) {
         try {
-            TypedQuery<Doctor> query = entityManager.createQuery("SELECT d FROM Patient d WHERE d.cin = '" + cin + "'", Doctor.class);
+            TypedQuery<Doctor> query = entityManager.createQuery("SELECT d FROM Doctor d WHERE d.cin = '" + cin + "'", Doctor.class);
             return query.getSingleResult();
         }catch (NoResultException e){
             return  null;

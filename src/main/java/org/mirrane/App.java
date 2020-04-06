@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.mirrane.entity.TypeAppointement;
+import org.mirrane.service.DoctorService;
 import org.mirrane.service.PatientService;
 import org.mirrane.service.TypeAppointementService;
 
@@ -18,28 +19,31 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    DoctorService doctorService = new DoctorService();
+
+    
 
 
 
     @Override
     public void start(Stage stage) throws IOException {
 
-
-
-
-
-        scene = new Scene(loadFXML("Speciality"));
+        scene = new Scene(loadFXML("AddAppointement"));
         stage.setScene(scene);
         stage.show();
 
     }
-/*
->>>>>>> e27ce07993b6e4d3ef9dabb2b2985f7dd3044d27
 
 
-      /* PatientService  patientService = new PatientService();
 
-       TypeAppointementService typeAppointementService = new TypeAppointementService();
+
+   // PatientService  patientService = new PatientService();
+
+
+
+
+
+      /* TypeAppointementService typeAppointementService = new TypeAppointementService();
        TypeAppointement typeAppointement = new TypeAppointement("ref3","lib1", (double) 12);
        typeAppointementService.saveTypeAppointement(typeAppointement);
 

@@ -6,8 +6,7 @@ import javafx.collections.ObservableList;
 import javafx.collections.ObservableListBase;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.mirrane.entity.TypeAppointement;
 import org.mirrane.service.TypeAppointementService;
@@ -32,6 +31,8 @@ public class AddTypeAppointementController implements Initializable {
     @FXML
     private JFXTextField price;
     @FXML
+    private ChoiceBox khikhi = new ChoiceBox();
+    @FXML
     private TableView<TypeAppointement> typeAppointementTableView = new TableView<>();
     @FXML
     private javafx.scene.control.TableColumn<TypeAppointement, String> references;
@@ -54,13 +55,6 @@ public class AddTypeAppointementController implements Initializable {
 
     }
 
-    public ObservableList<TypeAppointement> getList() {
-        return list;
-    }
-
-    public void setList(ObservableList<TypeAppointement> list) {
-        this.list = list;
-    }
 
     ObservableList<TypeAppointement> list = FXCollections.observableArrayList();
 
@@ -75,7 +69,7 @@ public class AddTypeAppointementController implements Initializable {
         libelles.setCellValueFactory(new PropertyValueFactory<>("libelle"));
         prices.setCellValueFactory(new PropertyValueFactory<>("price"));
         typeAppointementTableView.setItems(list);
-
+        khikhi.setItems(FXCollections.observableArrayList("New Document", "Open ", new Separator(), "Save", "Save as"));
     }
 }
 
