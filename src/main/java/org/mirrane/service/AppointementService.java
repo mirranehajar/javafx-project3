@@ -59,25 +59,25 @@ public class AppointementService {
     public Boolean isPrestent(Appointement appointement){
         return appointementDao.isPresent(appointement.getId());
     }
-    Appointement findAppointementByReference(String reference){
+    public Appointement findAppointementByReference(String reference){
         return appointementDao.findAppointementByReference(reference);
     }
-    Appointement findAppointementByDateAppointement(Date dateAppointement){
+    public Appointement findAppointementByDateAppointement(Date dateAppointement){
         return appointementDao.findAppointementByDateAppointement(dateAppointement);
     }
-    Appointement findAppointementByHourAppointement(Date hourAppointement){
+    public Appointement findAppointementByHourAppointement(Date hourAppointement){
         return appointementDao.findAppointementByHourAppointement(hourAppointement);
     }
-    Appointement findAppointementByStateAppointement(String StateAppointement){
+    public Appointement findAppointementByStateAppointement(String StateAppointement){
         return appointementDao.findAppointementByStateAppointement(StateAppointement);
     }
-    Appointement findAppointementByTypeAppointement(TypeAppointement typeAppointement){
+    public Appointement findAppointementByTypeAppointement(TypeAppointement typeAppointement){
         return appointementDao.findAppointementByTypeAppointement(typeAppointement);
     }
-    Appointement findAppointementByPatient(Patient patient){
+    public Appointement findAppointementByPatient(Patient patient){
         return appointementDao.findAppointementByPatient(patient);
     }
-    Appointement findAppointementByDoctor(Doctor doctor){
+    public Appointement findAppointementByDoctor(Doctor doctor){
         return appointementDao.findAppointementByDoctor(doctor);
     }
 }

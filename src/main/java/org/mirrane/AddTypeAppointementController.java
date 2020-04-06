@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import org.mirrane.entity.Specialty;
 import org.mirrane.entity.TypeAppointement;
 import org.mirrane.service.TypeAppointementService;
 
@@ -31,8 +32,6 @@ public class AddTypeAppointementController implements Initializable {
     @FXML
     private JFXTextField price;
     @FXML
-    private ChoiceBox khikhi = new ChoiceBox();
-    @FXML
     private TableView<TypeAppointement> typeAppointementTableView = new TableView<>();
     @FXML
     private javafx.scene.control.TableColumn<TypeAppointement, String> references;
@@ -54,7 +53,21 @@ public class AddTypeAppointementController implements Initializable {
         App.setRoot("AddTypeAppointement");
 
     }
+    public void show() throws IOException{
+        TypeAppointement selectedTypeAppointement = typeAppointementTableView.getSelectionModel().getSelectedItem();
+        libelle.setText(selectedTypeAppointement.getLibelle());
+        reference.setText(selectedTypeAppointement.getReference());
+        price.setText(String.valueOf(selectedTypeAppointement.getPrice()));
+    }
+    public void update() throws IOException{
+        TypeAppointement typeAppointement = typeAppointementService.findTypeAppointementByReference(reference.getText());
+        typeAppointement.setLibelle(libelle.getText());
+        typeAppointement.setPrice(new Double(price.getText()));
+        typeAppointementService.updateTypeAppointement(typeAppointement);
+        System.out.println(typeAppointement);
+        App.setRoot("AddTypeAppointement");
 
+    }
 
     ObservableList<TypeAppointement> list = FXCollections.observableArrayList();
 
@@ -69,7 +82,7 @@ public class AddTypeAppointementController implements Initializable {
         libelles.setCellValueFactory(new PropertyValueFactory<>("libelle"));
         prices.setCellValueFactory(new PropertyValueFactory<>("price"));
         typeAppointementTableView.setItems(list);
-        khikhi.setItems(FXCollections.observableArrayList("New Document", "Open ", new Separator(), "Save", "Save as"));
+
     }
 }
 

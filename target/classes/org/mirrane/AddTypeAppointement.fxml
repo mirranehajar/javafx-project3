@@ -25,7 +25,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Button layoutX="11.0" layoutY="177.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #288E88;" text="Edit" />
+                  <Button layoutX="11.0" layoutY="177.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #288E88;" text="Edit" />
                   <JFXTextField fx:id="reference" layoutX="109.0" layoutY="24.0" style="-fx-background-color: #FFFFFF;" />
                   <Label layoutX="31.0" layoutY="26.0" text="Reference">
                      <font>
@@ -40,7 +40,7 @@
                   </Label>
                </children>
             </AnchorPane>
-            <TableView fx:id="typeAppointementTableView" layoutX="14.0" layoutY="59.0" prefHeight="370.0" prefWidth="331.0">
+            <TableView fx:id="typeAppointementTableView" layoutX="14.0" layoutY="59.0" onMouseClicked="#show" prefHeight="370.0" prefWidth="331.0">
                <columns>
                   <TableColumn fx:id="references" prefWidth="96.0" text="Reference" />
                   <TableColumn fx:id="libelles" prefWidth="124.0" text="Libelle" />

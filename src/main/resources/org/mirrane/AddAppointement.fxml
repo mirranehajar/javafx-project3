@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?><?import javafx.scene.control.ChoiceBox?><?import com.jfoenix.controls.JFXDatePicker?><?import javafx.scene.control.Label?><?import com.jfoenix.controls.JFXButton?><?import com.jfoenix.controls.JFXTimePicker?><?import com.jfoenix.controls.JFXTextField?><?import javafx.scene.control.TableView?><?import javafx.scene.control.TableColumn?><?import javafx.scene.control.MenuButton?><?import javafx.scene.control.MenuItem?><?import com.jfoenix.controls.JFXTextArea?><?import javafx.scene.text.Font?>S<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXTextArea?>
 <?import com.jfoenix.controls.JFXTextField?>
@@ -14,9 +14,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="461.0" prefWidth="692.0" style="-fx-background-color: #288E88;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mirrane.AddAppointementController">
+<AnchorPane prefHeight="461.0" prefWidth="725.0" style="-fx-background-color: #288E88;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.mirrane.AddAppointementController">
     <children>
-        <AnchorPane layoutX="421.0" layoutY="65.0" prefHeight="371.0" prefWidth="265.0" style="-fx-background-color: #A4ABAA;">
+        <AnchorPane layoutX="444.0" layoutY="65.0" prefHeight="371.0" prefWidth="265.0" style="-fx-background-color: #A4ABAA;">
             <children>
                 <ChoiceBox fx:id="typeAppointement" layoutX="118.0" layoutY="165.0" prefHeight="25.0" prefWidth="132.0" />
                 <JFXDatePicker fx:id="dateAppointement" defaultColor="#00110f" layoutX="127.0" layoutY="60.0" prefHeight="28.0" prefWidth="118.0" promptText=" date" style="-fx-background-color: FFFFFF;" />
@@ -29,21 +29,23 @@
                 <JFXTimePicker fx:id="hourAppointement" defaultColor="#141414" layoutX="127.0" layoutY="113.0" prefHeight="28.0" prefWidth="118.0" style="-fx-background-color: #FFFFFF;" />
                 <ChoiceBox fx:id="doctor" layoutX="120.0" layoutY="249.0" prefHeight="25.0" prefWidth="132.0" />
                 <Label layoutX="39.0" layoutY="261.0" text="Doctor" />
-                <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="317.0" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #288E88;" text="Edit" textFill="WHITE" />
+                <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="317.0" onAction="#update" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #288E88;" text="Edit" textFill="WHITE" />
             <JFXTextField fx:id="reference" layoutX="120.0" layoutY="14.0" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #FFFFFF;" />
             <Label layoutX="25.0" layoutY="18.0" text="Reference" />
             </children>
         </AnchorPane>
-        <TableView layoutX="10.0" layoutY="65.0" prefHeight="237.0" prefWidth="397.0">
+        <TableView fx:id="appointementTableView" layoutX="5.0" layoutY="65.0" onMouseClicked="#show" prefHeight="284.0" prefWidth="428.0">
             <columns>
-                <TableColumn prefWidth="73.0" text="Reference" />
-                <TableColumn prefWidth="94.0" text="Date" />
-                <TableColumn minWidth="0.0" prefWidth="58.0" text="Hour" />
-                <TableColumn prefWidth="75.0" text="Type" />
-                <TableColumn prefWidth="96.0" text="Doctor" />
+                <TableColumn fx:id="references" prefWidth="64.0" text="Reference" />
+                <TableColumn fx:id="datesAppointement" prefWidth="56.0" text="Date" />
+                <TableColumn fx:id="hoursAppointement" minWidth="0.0" prefWidth="59.0" text="Hour" />
+                <TableColumn fx:id="statesAppointement" minWidth="0.0" prefWidth="59.0" text="State" />
+                <TableColumn fx:id="typesAppointement" prefWidth="56.0" text="Type" />
+                <TableColumn fx:id="doctors" prefWidth="68.0" text="Doctor" />
+                <TableColumn fx:id="patients" prefWidth="67.0" text="Patient" />
             </columns>
         </TableView>
-        <AnchorPane layoutX="47.0" layoutY="316.0" prefHeight="70.0" prefWidth="322.0" style="-fx-background-color: #A4ABAA;">
+        <AnchorPane layoutX="48.0" layoutY="366.0" prefHeight="70.0" prefWidth="322.0" style="-fx-background-color: #A4ABAA;">
             <children>
                 <JFXTextField layoutX="85.0" layoutY="20.0" style="-fx-background-color: #FFFFFF;" />
                 <Label layoutX="17.0" layoutY="24.0" text="Search" />
@@ -61,6 +63,6 @@
                 <Font size="17.0" />
             </font>
         </JFXTextArea>
-        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+        <AnchorPane prefHeight="28.0" prefWidth="114.0" />
     </children>
 </AnchorPane>

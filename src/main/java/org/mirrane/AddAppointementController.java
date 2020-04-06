@@ -8,13 +8,9 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Separator;
-import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import org.mirrane.entity.Appointement;
-import org.mirrane.entity.Doctor;
-import org.mirrane.entity.Patient;
-import org.mirrane.entity.TypeAppointement;
+import javafx.scene.control.cell.PropertyValueFactory;
+import org.mirrane.entity.*;
 import org.mirrane.service.AppointementService;
 import org.mirrane.service.DoctorService;
 import org.mirrane.service.PatientService;
@@ -22,20 +18,14 @@ import org.mirrane.service.TypeAppointementService;
 
 import java.io.IOException;
 import java.net.URL;
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.time.ZoneId;
-import java.util.Date;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
 
 public class AddAppointementController implements Initializable {
 
-    AppointementService appointementService;
-
-
+    public AppointementService appointementService;
     @FXML
     private JFXTextField reference;
     @FXML
@@ -48,20 +38,26 @@ public class AddAppointementController implements Initializable {
     private ChoiceBox doctor = new ChoiceBox();
     @FXML
     private ChoiceBox patient = new ChoiceBox();
+    @FXML
+    private TableView<Appointement> appointementTableView = new TableView<>();
+    @FXML
+    private javafx.scene.control.TableColumn<Appointement, String> references;
+    @FXML
+    private javafx.scene.control.TableColumn<Appointement, String> datesAppointement;
+    @FXML
+    private javafx.scene.control.TableColumn<Appointement, String> hoursAppointement;
+    @FXML
+    private javafx.scene.control.TableColumn<Appointement, String> statesAppointement;
+    @FXML
+    private javafx.scene.control.TableColumn<Appointement, String> typesAppointement;
+    @FXML
+    private javafx.scene.control.TableColumn<Appointement, String> doctors;
+    @FXML
+    private javafx.scene.control.TableColumn<Appointement, String> patients;
 
     public AddAppointementController() {
         this.appointementService = new AppointementService();
     }
-
-
-/*
-
-    LocalDate localDate = dateAppointement.getValue();
-    Instant instantDate = Instant.from(localDate);
-    Date date = Date.from(instantDate);
-    LocalTime localTime = hourAppointement.getValue();
-    Instant instantHour = Instant.from(localTime.atDate(localDate));
-    Date hour = Date.from(instantHour);*/
 
 
 
@@ -69,6 +65,7 @@ public class AddAppointementController implements Initializable {
     PatientService patientService = new PatientService();
     DoctorService doctorService = new DoctorService();
 
+    ObservableList<Appointement> list = FXCollections.observableArrayList();
     ObservableList<String> listTypeAppointement = FXCollections.observableArrayList();
     ObservableList<String> listPatient = FXCollections.observableArrayList();
     ObservableList<String> listDoctor = FXCollections.observableArrayList();
@@ -79,8 +76,43 @@ public class AddAppointementController implements Initializable {
         appointementService.saveAppointement(appointement);
         App.setRoot("AddAppointement");
     }
+    public void show() throws IOException{
+        Appointement selectedAppointement = appointementTableView.getSelectionModel().getSelectedItem();
+        reference.setText(selectedAppointement.getReference());
+        dateAppointement.setValue(LocalDate.parse(selectedAppointement.getDateAppointement()));
+        hourAppointement.setValue(LocalTime.parse(selectedAppointement.getHourAppointement()));
+        typeAppointement.setValue(selectedAppointement.getTypeAppointement().getLibelle());
+        doctor.setValue(selectedAppointement.getDoctor().getCin());
+        patient.setValue(selectedAppointement.getPatient().getCin());
+
+    }
+    public void update() throws IOException{
+        Appointement appointement = appointementService.findAppointementByReference(reference.getText());
+        appointement.setDateAppointement(dateAppointement.getValue().toString());
+        appointement.setHourAppointement(hourAppointement.getValue().toString());
+        appointement.setTypeAppointement(typeAppointementService.findTypeAppointementByReference(typeAppointement.getValue().toString()));
+        appointement.setPatient(patientService.getPatientByCin(patient.getValue().toString()));
+        appointement.setDoctor(doctorService.getDoctorByCin(doctor.getValue().toString()));
+        appointementService.updateAppointement(appointement);
+        System.out.println(typeAppointement);
+        App.setRoot("AddTypeAppointemkent");
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        List<Appointement> appointements = appointementService.findAllAppointement();
+        for(int i=0; i<appointements.size();i++){
+            list.add(new Appointement(appointements.get(i).getReference(), appointements.get(i).getDateAppointement(), appointements.get(i).getHourAppointement(), appointements.get(i).getTypeAppointement(), appointements.get(i).getPatient(), appointements.get(i).getDoctor()));
+        }
+        references.setCellValueFactory(new PropertyValueFactory<>("reference"));
+        datesAppointement.setCellValueFactory(new PropertyValueFactory<>("dateAppointement"));
+        hoursAppointement.setCellValueFactory(new PropertyValueFactory<>("hourAppointement"));
+        statesAppointement.setCellValueFactory(new PropertyValueFactory<>("stateAppointement"));
+        typesAppointement.setCellValueFactory(new PropertyValueFactory<>("typeAppointement"));
+        patients.setCellValueFactory(new PropertyValueFactory<>("patient"));
+        doctors.setCellValueFactory(new PropertyValueFactory<>("doctor"));
+        appointementTableView.setItems(list);
         List<TypeAppointement> typeAppointements = typeAppointementService.findAllTypeAppointement();
         List<Patient> patients = patientService.getPatients();
         List<Doctor> doctors = doctorService.getDoctors();

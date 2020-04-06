@@ -1,6 +1,5 @@
 package org.mirrane.dao;
 
-import org.mirrane.entity.Appointement;
 import org.mirrane.entity.TypeAppointement;
 
 import javax.persistence.EntityManager;
@@ -40,10 +39,11 @@ public class TypeAppointementDaoImpl implements TypeAppointementDao {
     }
 
     @Override
-    public void updateTypeAppointement(TypeAppointement typeAppointement) {
+    public int updateTypeAppointement(TypeAppointement typeAppointement) {
         entityManager.getTransaction().begin();
         entityManager.merge(typeAppointement);
         entityManager.getTransaction().commit();
+        return 0;
     }
 
     @Override

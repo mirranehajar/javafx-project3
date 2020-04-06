@@ -40,7 +40,7 @@ public class TypeAppointementService {
         if( typeAppointementFounded!= null){
             typeAppointementFounded.setLibelle(typeAppointement.getLibelle());
             typeAppointementFounded.setPrice(typeAppointement.getPrice());
-        typeAppointementDao.updateTypeAppointement(typeAppointement);
+        typeAppointementDao.updateTypeAppointement(typeAppointementFounded);
             return 1;
         }
         else {
