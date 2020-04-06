@@ -5,7 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.mirrane.entity.Appointement;
 import org.mirrane.entity.TypeAppointement;
+import org.mirrane.service.AppointementService;
 import org.mirrane.service.DoctorService;
 import org.mirrane.service.PatientService;
 import org.mirrane.service.TypeAppointementService;
@@ -20,6 +22,10 @@ public class App extends Application {
 
     private static Scene scene;
     DoctorService doctorService = new DoctorService();
+    TypeAppointementService typeAppointementService = new TypeAppointementService();
+    PatientService patientService = new PatientService();
+    AppointementService appointementService = new AppointementService();
+    Appointement appointement = new Appointement("ref4",null, null, typeAppointementService.findTypeAppointementByLibelle("lib10"),patientService.getPatientByCin("hajar"), doctorService.getDoctorByCin("jkxdj45"));
 
     
 

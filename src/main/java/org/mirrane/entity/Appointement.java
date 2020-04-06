@@ -11,10 +11,10 @@ public class Appointement  {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String reference;
-    @Temporal(javax.persistence.TemporalType.DATE)
-    private Date dateAppointement;
-    @Temporal(javax.persistence.TemporalType.TIME)
-    private Date hourAppointement;
+    //@Temporal(javax.persistence.TemporalType.DATE)
+    private String dateAppointement;
+    //@Temporal(javax.persistence.TemporalType.TIME)
+    private String hourAppointement;
     private String stateAppointement;
     @ManyToOne
     private TypeAppointement typeAppointement;
@@ -39,19 +39,19 @@ public class Appointement  {
         this.reference = reference;
     }
 
-    public Date getDateAppointement() {
+    public String getDateAppointement() {
         return dateAppointement;
     }
 
-    public void setDateAppointement(Date dateAppointement) {
+    public void setDateAppointement(String dateAppointement) {
         this.dateAppointement = dateAppointement;
     }
 
-    public Date getHourAppointement() {
+    public String getHourAppointement() {
         return hourAppointement;
     }
 
-    public void setHourAppointement(Date hourAppointement) {
+    public void setHourAppointement(String hourAppointement) {
         this.hourAppointement = hourAppointement;
     }
 
@@ -87,7 +87,7 @@ public class Appointement  {
         this.doctor = doctor;
     }
 
-    public Appointement(String reference, Date dateAppointement, Date hourAppointement, TypeAppointement typeAppointement, Patient patient, Doctor doctor) {
+    public Appointement(String reference, String dateAppointement, String hourAppointement, TypeAppointement typeAppointement, Patient patient, Doctor doctor) {
         this.reference = reference;
         this.dateAppointement = dateAppointement;
         this.hourAppointement = hourAppointement;

@@ -4,10 +4,20 @@ import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXTextField;
 import com.jfoenix.controls.JFXTimePicker;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Separator;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import org.mirrane.entity.Appointement;
+import org.mirrane.entity.Doctor;
+import org.mirrane.entity.Patient;
+import org.mirrane.entity.TypeAppointement;
 import org.mirrane.service.AppointementService;
+import org.mirrane.service.DoctorService;
+import org.mirrane.service.PatientService;
 import org.mirrane.service.TypeAppointementService;
 
 import java.net.URL;
@@ -16,84 +26,75 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.ZoneId;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class AddAppointementController implements Initializable {
-    TypeAppointementService typeAppointementService;
+
+    AppointementService appointementService;
+
+    List boxList = new LinkedList<String>();
     @FXML
     private JFXTextField reference;
     @FXML
-    private JFXDatePicker dateAppointement;
+    private JFXDatePicker dateAppointement =  new JFXDatePicker();
     @FXML
-    private JFXTimePicker hourAppointement;
+    private JFXTimePicker hourAppointement = new JFXTimePicker();
     @FXML
-    private ChoiceBox typeAppointement = new ChoiceBox(FXCollections.observableList(typeAppointementService.findAllTypeAppointement()));
+    private ChoiceBox typeAppointement = new ChoiceBox(FXCollections.observableList(boxList));
     @FXML
-    private ChoiceBox doctor;
+    private ChoiceBox doctor = new ChoiceBox();
     @FXML
-    private ChoiceBox patient;
-    Date time ;
+    private ChoiceBox patient = new ChoiceBox();
+    @FXML
+    private TableView<Appointement> appointementTableView = new TableView<>();
+    @FXML
+    private javafx.scene.control.TableColumn<Appointement, String> references;
+    @FXML
+    private javafx.scene.control.TableColumn<TypeAppointement, String> libelles;
+    @FXML
+    private TableColumn<TypeAppointement, Double> prices;
+
+
+/*
 
     LocalDate localDate = dateAppointement.getValue();
-    Instant instantDate = Instant.from(localDate.atStartOfDay(ZoneId.systemDefault()));
+    Instant instantDate = Instant.from(localDate);
     Date date = Date.from(instantDate);
     LocalTime localTime = hourAppointement.getValue();
-    Instant instantHour = Instant.from(localTime.atDate(localDate).atZone(ZoneId.systemDefault()));
-    Date hour = Date.from(instantHour);
+    Instant instantHour = Instant.from(localTime.atDate(localDate));
+    Date hour = Date.from(instantHour);*/
 
 
-    AppointementService appointementService = new AppointementService();
 
-    public JFXTextField getReference() {
-        return reference;
+    TypeAppointementService typeAppointementService = new TypeAppointementService();
+    PatientService patientService = new PatientService();
+    DoctorService doctorService = new DoctorService();
+
+    ObservableList<String> listTypeAppointement = FXCollections.observableArrayList();
+    ObservableList<String> listPatient = FXCollections.observableArrayList();
+    ObservableList<String> listDoctor = FXCollections.observableArrayList();
+
+    public void save(){
+        appointementService.saveAppointement(new Appointement(reference.getText(),dateAppointement.getValue().toString(), hourAppointement.getValue().toString(), typeAppointementService.findTypeAppointementByLibelle(typeAppointement.getValue().toString()),patientService.getPatientByCin(patient.getValue().toString()), doctorService.getDoctorByCin(doctor.getValue().toString())));
     }
-
-    public void setReference(JFXTextField reference) {
-        this.reference = reference;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public Date getHour() {
-        return hour;
-    }
-
-    public void setHour(Date hour) {
-        this.hour = hour;
-    }
-
-    public ChoiceBox getTypeAppointement() {
-        return typeAppointement;
-    }
-
-    public void setTypeAppointement(ChoiceBox typeAppointement) {
-        this.typeAppointement = typeAppointement;
-    }
-
-    public ChoiceBox getDoctor() {
-        return doctor;
-    }
-
-    public void setDoctor(ChoiceBox doctor) {
-        this.doctor = doctor;
-    }
-
-    public ChoiceBox getPatient() {
-        return patient;
-    }
-
-    public void setPatient(ChoiceBox patient) {
-        this.patient = patient;
-    }
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        List<TypeAppointement> typeAppointements = typeAppointementService.findAllTypeAppointement();
+        List<Patient> patients = patientService.getPatients();
+        List<Doctor> doctors = doctorService.getDoctors();
+        for(int i=0; i<typeAppointements.size();i++){
+            listTypeAppointement.add(typeAppointements.get(i).getLibelle());
+        }
+        for(int i=0; i<doctors.size();i++){
+            listDoctor.add(doctors.get(i).getCin());
+        }
+        for(int i=0; i<patients.size();i++){
+            listPatient.add(patients.get(i).getCin());
+        }
+        doctor.setItems(listDoctor);
+        patient.setItems(listPatient);
+        typeAppointement.setItems(listTypeAppointement);
     }
 }

@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
+    <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="show find All Specialty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/AddAppointementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/AddTypeAppointementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/AddTypeAppointementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/AddAppointementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/AddAppointementController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/DoctorDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/DoctorDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/mirrane/AddAppointement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/mirrane/AddAppointement.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/mirrane/AddTypeAppointement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/mirrane/AddTypeAppointement.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/mirrane/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/mirrane/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/mirrane/Registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/mirrane/Registration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/AddAppointement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/AddAppointement.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/AddTypeAppointement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/AddTypeAppointement.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/Registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/Registration.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/Speciality.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/Speciality.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Appointement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/entity/Appointement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +44,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/org/mirrane" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SIR/IHM/jfoenix-8.0.1.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -112,7 +102,9 @@
       <workItem from="1586087906086" duration="7984000" />
       <workItem from="1586096152977" duration="5540000" />
       <workItem from="1586106922393" duration="7782000" />
-      <workItem from="1586145149909" duration="1003000" />
+      <workItem from="1586145149909" duration="1485000" />
+      <workItem from="1586146760393" duration="2522000" />
+      <workItem from="1586150348888" duration="126000" />
     </task>
     <task id="LOCAL-00001" summary="tried but failed">
       <created>1586031028905</created>
@@ -170,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586132691542</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="show find All Specialty">
+      <created>1586146295230</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586146295230</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,47 +198,47 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1586128709376" />
-    <state x="488" y="84" key="#com.intellij.ide.util.MemberChooser" timestamp="1586144956946">
+    <state x="488" y="0" width="390" height="728" key="#com.intellij.ide.util.MemberChooser" timestamp="1586146908030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="84" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586144956946" />
+    <state x="488" y="0" width="390" height="728" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586146908030" />
     <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586128250560" />
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586104532952">
+    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586150367752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586104532952" />
+    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586150367752" />
     <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586140758159">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586140758159" />
-    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586132690582">
+    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586146293426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586132690582" />
+    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586146293426" />
     <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586130385193" />
-    <state x="410" y="108" key="FileChooserDialogImpl" timestamp="1586082723330">
+    <state x="410" y="108" key="FileChooserDialogImpl" timestamp="1586150462192">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="410" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586082723330" />
-    <state width="1323" height="543" key="GridCell.Tab.0.bottom" timestamp="1586146131058">
+    <state x="410" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586150462192" />
+    <state width="1323" height="570" key="GridCell.Tab.0.bottom" timestamp="1586150542826">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="543" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586146131058" />
+    <state width="1323" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586150542826" />
     <state width="1011" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1323" height="543" key="GridCell.Tab.0.center" timestamp="1586146131058">
+    <state width="1323" height="570" key="GridCell.Tab.0.center" timestamp="1586150542826">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="543" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586146131058" />
+    <state width="1323" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586150542826" />
     <state width="1011" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1323" height="543" key="GridCell.Tab.0.left" timestamp="1586146131058">
+    <state width="1323" height="570" key="GridCell.Tab.0.left" timestamp="1586150542826">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="543" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586146131058" />
+    <state width="1323" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586150542826" />
     <state width="1011" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
-    <state width="1323" height="543" key="GridCell.Tab.0.right" timestamp="1586146131058">
+    <state width="1323" height="570" key="GridCell.Tab.0.right" timestamp="1586150542826">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="543" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586146131058" />
+    <state width="1323" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586150542826" />
     <state width="1011" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586006333541" />
     <state x="213" y="22" key="Maven.ArtifactSearchDialog" timestamp="1586035816708">
       <screen x="0" y="0" width="1366" height="728" />
@@ -253,20 +252,20 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="395" y="85" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1586128458988" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1586104778631">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1586150469755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586104778631" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586150469755" />
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585930887257" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586133009599">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586146304262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586133009599" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586146304262" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1586130414024" />
-    <state x="378" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1586145152259">
+    <state x="378" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1586146760616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586145152259" />
+    <state x="378" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586146760616" />
     <state x="378" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586128783154" />
     <state x="383" y="158" key="git4idea.merge.GitPullDialog" timestamp="1586132700709">
       <screen x="0" y="0" width="1366" height="728" />
