@@ -96,7 +96,31 @@ public class AddAppointementController implements Initializable {
         appointementService.updateAppointement(appointement);
         System.out.println(typeAppointement);
         App.setRoot("AddTypeAppointemkent");
+    }
 
+    @FXML
+    public void switchToLogin() throws IOException {
+        App.setRoot("Login");
+    }
+    @FXML
+    public void switchToAppointment() throws IOException {
+        App.setRoot("AddAppointement");
+    }
+    @FXML
+    public void switchToAddPerson() throws IOException {
+        App.setRoot("AddPerson");
+    }
+    @FXML
+    public void switchToTypeApp() throws IOException {
+        App.setRoot("AddTypeAppointement");
+    }
+    @FXML
+    public void switchToRegistration() throws IOException {
+        App.setRoot("Registration");
+    }
+    @FXML
+    public void switchToSpecialty() throws IOException {
+        App.setRoot("Speciality");
     }
 
     @Override
