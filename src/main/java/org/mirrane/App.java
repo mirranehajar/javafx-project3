@@ -37,7 +37,7 @@ public class App extends Application {
         scene = new Scene(loadFXML("AddAppointement"));
         stage.setScene(scene);
         stage.show();
-
+appointementService.saveAppointement(appointement);
     }
 
 

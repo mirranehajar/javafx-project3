@@ -47,14 +47,10 @@ public class AddAppointementController implements Initializable {
     private ChoiceBox doctor = new ChoiceBox();
     @FXML
     private ChoiceBox patient = new ChoiceBox();
-    @FXML
-    private TableView<Appointement> appointementTableView = new TableView<>();
-    @FXML
-    private javafx.scene.control.TableColumn<Appointement, String> references;
-    @FXML
-    private javafx.scene.control.TableColumn<TypeAppointement, String> libelles;
-    @FXML
-    private TableColumn<TypeAppointement, Double> prices;
+
+    public AddAppointementController() {
+        this.appointementService = appointementService;
+    }
 
 
 /*
@@ -76,8 +72,16 @@ public class AddAppointementController implements Initializable {
     ObservableList<String> listPatient = FXCollections.observableArrayList();
     ObservableList<String> listDoctor = FXCollections.observableArrayList();
 
+    @FXML
     public void save(){
-        appointementService.saveAppointement(new Appointement(reference.getText(),dateAppointement.getValue().toString(), hourAppointement.getValue().toString(), typeAppointementService.findTypeAppointementByLibelle(typeAppointement.getValue().toString()),patientService.getPatientByCin(patient.getValue().toString()), doctorService.getDoctorByCin(doctor.getValue().toString())));
+        System.out.println(reference.getText());
+        System.out.println(dateAppointement.getValue().toString());
+        System.out.println(hourAppointement.getValue().toString());
+        System.out.println(typeAppointementService.findTypeAppointementByLibelle(typeAppointement.getValue().toString()));
+        System.out.println(doctorService.getDoctorByCin(doctor.getValue().toString()));
+        System.out.println(patientService.getPatientByCin(patient.getValue().toString()));
+Appointement appointement =  new Appointement(reference.getText(),dateAppointement.getValue().toString(), hourAppointement.getValue().toString(), typeAppointementService.findTypeAppointementByLibelle(typeAppointement.getValue().toString()),patientService.getPatientByCin(patient.getValue().toString()), doctorService.getDoctorByCin(doctor.getValue().toString()));
+        appointementService.saveAppointement(appointement);
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
