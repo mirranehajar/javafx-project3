@@ -74,6 +74,28 @@ public class AddPersonnController implements Initializable {
 
     }
 
+    public void edit() throws IOException{
+        Patient selectedPatient = patientTableView.getSelectionModel().getSelectedItem();
+        cin.setText(selectedPatient.getCin());
+        firstName.setText(selectedPatient.getFirstName());
+        lastName.setText(selectedPatient.getLastName());
+        phoneNumber.setText(selectedPatient.getPhoneNumber());
+        adresse.setText(selectedPatient.getAddress());
+        mail.setText(selectedPatient.getMail());
+    }
+    public void edit1() throws IOException{
+        Patient patient = new Patient();
+        patient.setCin(cin.getText());
+        patient.setFirstName(firstName.getText());
+        patient.setLastName(lastName.getText());
+        patient.setMail(mail.getText());
+        patient.setPhoneNumber(phoneNumber.getText());
+        patient.setAddress(adresse.getText());
+        patientService.updatePatient(patient);
+        App.setRoot("AddPerson");
+
+    }
+
     @FXML
     public void add() throws IOException {
 
