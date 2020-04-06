@@ -86,7 +86,7 @@ public class AddPersonnController implements Initializable {
         patient.setAddress(adresse.getText());
 
         patientService.addPatient(patient);
-        App.setRoot("Speciality");
+        App.setRoot("AddPerson");
 
     }
 

@@ -23,14 +23,14 @@
                      <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="287.0" prefWidth="489.0">
                            <children>
-                              <TableView fx:id="patientTableView" layoutY="-2.0" prefHeight="317.0" prefWidth="509.0">
+                              <TableView fx:id="patientTableView" layoutY="-2.0" prefHeight="317.0" prefWidth="462.0">
                                  <columns>
-                                    <TableColumn prefWidth="59.0" text="CNI" />
-                                    <TableColumn prefWidth="73.0" text="LastName" />
-                                    <TableColumn minWidth="0.0" prefWidth="85.0" text="FirstName" />
-                                    <TableColumn prefWidth="87.0" text="Email" />
-                                    <TableColumn prefWidth="74.0" text="Phone " />
-                                    <TableColumn prefWidth="83.0" text="Address" />
+                                    <TableColumn fx:id="cins" prefWidth="59.0" text="CNI" />
+                                    <TableColumn fx:id="lastNames" prefWidth="73.0" text="LastName" />
+                                    <TableColumn fx:id="firstNames" minWidth="0.0" prefWidth="85.0" text="FirstName" />
+                                    <TableColumn fx:id="mails" prefWidth="87.0" text="Email" />
+                                    <TableColumn fx:id="phoneNumbers" prefWidth="74.0" text="Phone " />
+                                    <TableColumn fx:id="adresses" prefWidth="83.0" text="Address" />
                                  </columns>
                               </TableView>
                            </children>
@@ -57,7 +57,7 @@
                </children>
             </AnchorPane>
             <JFXButton buttonType="RAISED" layoutX="32.0" layoutY="395.0" style="-fx-background-color: #A4ABAA;" text="Delete" />
-            <MenuBar prefHeight="25.0" prefWidth="790.0">
+            <MenuBar onMouseClicked="#switchToAppointment" prefHeight="25.0" prefWidth="790.0">
               <menus>
                 <Menu mnemonicParsing="false" onAction="#switchToAppointment" text="Appointment">
                 </Menu>
