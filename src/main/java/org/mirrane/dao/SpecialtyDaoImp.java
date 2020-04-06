@@ -76,11 +76,12 @@ public class SpecialtyDaoImp implements  SpecialtyDao {
     }
 
     @Override
-    public void deleteSpecialty(Specialty specialty) {
+    public int deleteSpecialty(Specialty specialty) {
 
         entityManager.getTransaction().begin();
         entityManager.remove(specialty);
         entityManager.getTransaction().commit();
+        return 0;
     }
 
     @Override

@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/AddTypeAppointement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/AddTypeAppointement.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/AddPersonnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/AddPersonnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/SpecialityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/SpecialityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/PatientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/PatientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/PatientDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/PatientDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/service/SpecialtyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/service/SpecialtyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +51,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javafx-project3" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="D:/Studies/jfoenix-8.0.2.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -70,7 +78,7 @@
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mirrane.App" />
-      <module name="projetcIHm" />
+      <module name="javafx-project3.2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.mirrane.*" />
@@ -268,11 +276,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="yarbi maykun ta muchkil" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="400" y="27" key="#App" timestamp="1586161497459">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="400" y="27" key="#App" timestamp="1586187714120">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="400" y="27" key="#App/0.0.1366.728@0.0.1366.728" timestamp="1586161497459" />
-    <state x="400" y="27" key="#App/0.0.1366.738@0.0.1366.738" timestamp="1586156480890" />
+    <state x="400" y="27" key="#App/0.0.1366.738@0.0.1366.738" timestamp="1586187714120" />
     <state x="275" y="27" key="#Project_Structure" timestamp="1586128709376">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -296,31 +304,31 @@
     </state>
     <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586185679029" />
     <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586159030596" />
-    <state x="410" y="108" key="FileChooserDialogImpl" timestamp="1586167615753">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="410" y="109" key="FileChooserDialogImpl" timestamp="1586187746955">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="410" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586167615753" />
-    <state x="410" y="109" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586153594794" />
-    <state width="1323" height="570" key="GridCell.Tab.0.bottom" timestamp="1586185836998">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="410" y="109" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586187746955" />
+    <state width="926" height="610" key="GridCell.Tab.0.bottom" timestamp="1586189214080">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586185836998" />
-    <state width="926" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586159877132" />
-    <state width="1323" height="570" key="GridCell.Tab.0.center" timestamp="1586185836998">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="926" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586189214080" />
+    <state width="926" height="610" key="GridCell.Tab.0.center" timestamp="1586189214079">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586185836998" />
-    <state width="926" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586159877132" />
-    <state width="1323" height="570" key="GridCell.Tab.0.left" timestamp="1586185836998">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="926" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586189214079" />
+    <state width="926" height="610" key="GridCell.Tab.0.left" timestamp="1586189214079">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586185836998" />
-    <state width="926" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586159877131" />
-    <state width="1323" height="570" key="GridCell.Tab.0.right" timestamp="1586185836998">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="926" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586189214079" />
+    <state width="926" height="610" key="GridCell.Tab.0.right" timestamp="1586189214080">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586185836998" />
-    <state width="926" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586159877132" />
+    <state width="926" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586189214080" />
     <state x="213" y="22" key="Maven.ArtifactSearchDialog" timestamp="1586035816708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -335,11 +343,11 @@
     </state>
     <state x="395" y="84" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1586185707577" />
     <state x="395" y="85" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1586154799920" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1586166361722">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1586187749170">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586166361722" />
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586154034164" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586187749170" />
     <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586179617962">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

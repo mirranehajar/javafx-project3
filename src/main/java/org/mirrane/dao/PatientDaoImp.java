@@ -75,10 +75,11 @@ public class PatientDaoImp implements PatientDao {
     }
 
     @Override
-    public void deletePatient(Patient patient) {
+    public int deletePatient(Patient patient) {
         entityManager.getTransaction().begin();
         entityManager.remove(patient);
         entityManager.getTransaction().commit();
+        return 0;
 
     }
 

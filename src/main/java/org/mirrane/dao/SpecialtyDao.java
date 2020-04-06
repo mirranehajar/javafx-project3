@@ -10,6 +10,6 @@ public interface SpecialtyDao {
     Specialty getSpecialty(Integer id);
     Specialty getSpecialtyReference(String reference);
     int updateSpecialty(Specialty specialty);
-    void deleteSpecialty(Specialty specialty);
+    int deleteSpecialty(Specialty specialty);
     boolean isPresent(int id);
 }

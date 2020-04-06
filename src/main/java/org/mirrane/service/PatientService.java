@@ -4,6 +4,7 @@ import org.mirrane.dao.PatientDao;
 import org.mirrane.dao.PatientDaoImp;
 import org.mirrane.entity.Client;
 import org.mirrane.entity.Patient;
+import org.mirrane.entity.Specialty;
 import org.mirrane.entity.TypeAppointement;
 
 import java.util.List;
@@ -57,12 +58,14 @@ public class PatientService {
         }
     }
 
-    public void deletePatient(Integer id) {
-        Patient patient = getPatientById(id);
-        if (!patient.getId().equals(0)){
+    public int deletePatient(Patient patient) {
+       Patient patientFounded = getPatientByCin(patient.getCin());
+        if (patientFounded!=null){
             patientDao.deletePatient(patient);
+            return 1;
+        }else {
+            return  0;
         }
-
     }
 
     public Patient getPatientByCin(String cin) {

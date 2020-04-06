@@ -74,6 +74,15 @@ public class AddPersonnController implements Initializable {
 
     }
 
+
+    public void delete() throws IOException {
+        Patient selectedPatient = patientTableView.getSelectionModel().getSelectedItem();
+        int i = patientService.deletePatient(selectedPatient);
+        System.out.println(i);
+        System.out.println(selectedPatient);
+        App.setRoot("AddPerson");
+    }
+
     public void edit() throws IOException{
         Patient selectedPatient = patientTableView.getSelectionModel().getSelectedItem();
         cin.setText(selectedPatient.getCin());

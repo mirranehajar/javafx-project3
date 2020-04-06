@@ -11,6 +11,6 @@ public interface PatientDao {
     Patient getPatientById(Integer id);
     Patient getPatientByCin(String cin);
     void updatePatient(Patient patient);
-    void deletePatient(Patient patient);
+    int deletePatient(Patient patient);
     boolean isPresent(Integer id);
 }

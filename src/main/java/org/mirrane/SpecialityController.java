@@ -55,11 +55,11 @@ public class SpecialityController implements Initializable {
 
 
     public void delete() throws IOException {
-        Specialty specialty = new Specialty();
-        specialtyService.deleteSpecialty(specialty);
+        Specialty selectedSpecialty = specialtyTableView.getSelectionModel().getSelectedItem();
+        int i = specialtyService.deleteSpecialty(selectedSpecialty);
+        System.out.println(i);
+        System.out.println(selectedSpecialty);
         App.setRoot("Speciality");
-
-
     }
 
     public void edit() throws IOException{
