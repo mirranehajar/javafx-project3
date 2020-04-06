@@ -41,11 +41,15 @@ public class SpecialtyService {
         return specialty;
     }
 
-    public void updateSpecialty(Specialty specialty) {
-        if (specialtyDao.isPresent(specialty.getId())) {
-            specialtyDao.updateSpecialty(specialty);
+    public int updateSpecialty(Specialty specialty) {
+        Specialty specialtyFounded = getSpecialtyReference(specialty.getReference());
+        if (specialtyFounded!=null) {
+            specialtyFounded.setLibelle(specialty.getLibelle());
+            specialtyFounded.setReference(specialty.getReference());
+            specialtyDao.updateSpecialty(specialtyFounded);
+            return 1;
         } else {
-            specialtyDao.addSpecialty(specialty);
+            return -1;
         }
     }
 

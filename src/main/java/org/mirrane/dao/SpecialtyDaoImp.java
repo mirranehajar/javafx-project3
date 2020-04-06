@@ -66,11 +66,12 @@ public class SpecialtyDaoImp implements  SpecialtyDao {
     }
 
     @Override
-    public void updateSpecialty(Specialty specialty) {
+    public int updateSpecialty(Specialty specialty) {
 
         entityManager.getTransaction().begin();
         entityManager.merge(specialty);
         entityManager.getTransaction().commit();
+        return 0;
 
     }
 
