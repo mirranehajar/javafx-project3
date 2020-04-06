@@ -9,7 +9,7 @@ public interface SpecialtyDao {
     List<Specialty> getSpecialties();
     Specialty getSpecialty(Integer id);
     Specialty getSpecialtyReference(String reference);
-    void updateSpecialty(Specialty specialty);
+    int updateSpecialty(Specialty specialty);
     void deleteSpecialty(Specialty specialty);
     boolean isPresent(int id);
 }

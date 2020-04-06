@@ -24,7 +24,7 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Button layoutX="14.0" layoutY="135.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #288E88;" text="Edit" />
+                  <Button layoutX="14.0" layoutY="135.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #288E88;" text="Edit" />
                   <JFXTextField fx:id="reference" layoutX="109.0" layoutY="24.0" style="-fx-background-color: #FFFFFF;" />
                   <Label layoutX="31.0" layoutY="26.0" text="Reference">
                      <font>
@@ -52,6 +52,7 @@
                </items>
             </MenuButton>
             <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="379.0" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #A4ABAA;" text="Delete" />
+            <JFXButton layoutX="523.0" layoutY="335.0" onAction="#edit1" text="ediiiiiiiiiit" />
          </children>
       </AnchorPane>
    </children>
