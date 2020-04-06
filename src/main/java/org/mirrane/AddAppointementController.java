@@ -20,6 +20,7 @@ import org.mirrane.service.DoctorService;
 import org.mirrane.service.PatientService;
 import org.mirrane.service.TypeAppointementService;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -34,7 +35,7 @@ public class AddAppointementController implements Initializable {
 
     AppointementService appointementService;
 
-    List boxList = new LinkedList<String>();
+
     @FXML
     private JFXTextField reference;
     @FXML
@@ -42,14 +43,14 @@ public class AddAppointementController implements Initializable {
     @FXML
     private JFXTimePicker hourAppointement = new JFXTimePicker();
     @FXML
-    private ChoiceBox typeAppointement = new ChoiceBox(FXCollections.observableList(boxList));
+    private ChoiceBox typeAppointement = new ChoiceBox();
     @FXML
     private ChoiceBox doctor = new ChoiceBox();
     @FXML
     private ChoiceBox patient = new ChoiceBox();
 
     public AddAppointementController() {
-        this.appointementService = appointementService;
+        this.appointementService = new AppointementService();
     }
 
 
@@ -73,15 +74,10 @@ public class AddAppointementController implements Initializable {
     ObservableList<String> listDoctor = FXCollections.observableArrayList();
 
     @FXML
-    public void save(){
-        System.out.println(reference.getText());
-        System.out.println(dateAppointement.getValue().toString());
-        System.out.println(hourAppointement.getValue().toString());
-        System.out.println(typeAppointementService.findTypeAppointementByLibelle(typeAppointement.getValue().toString()));
-        System.out.println(doctorService.getDoctorByCin(doctor.getValue().toString()));
-        System.out.println(patientService.getPatientByCin(patient.getValue().toString()));
-Appointement appointement =  new Appointement(reference.getText(),dateAppointement.getValue().toString(), hourAppointement.getValue().toString(), typeAppointementService.findTypeAppointementByLibelle(typeAppointement.getValue().toString()),patientService.getPatientByCin(patient.getValue().toString()), doctorService.getDoctorByCin(doctor.getValue().toString()));
+    public void save() throws IOException {
+        Appointement appointement =  new Appointement(reference.getText(),dateAppointement.getValue().toString(), hourAppointement.getValue().toString(), typeAppointementService.findTypeAppointementByLibelle(typeAppointement.getValue().toString()),patientService.getPatientByCin(patient.getValue().toString()), doctorService.getDoctorByCin(doctor.getValue().toString()));
         appointementService.saveAppointement(appointement);
+        App.setRoot("AddAppointement");
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
