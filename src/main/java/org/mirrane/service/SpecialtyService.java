@@ -49,9 +49,9 @@ public class SpecialtyService {
         }
     }
 
-    public void deleteSpecialty(Integer id) {
-        Specialty specialty = getSpecialty(id);
-        if (!specialty.getId().equals(0)){
+    public void deleteSpecialty(Specialty specialty) {
+        Specialty specialtyFounded = getSpecialtyReference(specialty.getReference());
+        if (specialtyFounded!=null){
             specialtyDao.deleteSpecialty(specialty);
         }
     }

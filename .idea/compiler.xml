@@ -9,6 +9,7 @@
         <module name="javafx-project3" />
         <module name="javafx-project3''" />
         <module name="javafx-project3'" />
+        <module name="javafx-project3.0" />
       </profile>
     </annotationProcessing>
   </component>

@@ -5,12 +5,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.mirrane.entity.Specialty;
 import org.mirrane.entity.TypeAppointement;
 import org.mirrane.service.SpecialtyService;
 
+import javax.persistence.NoResultException;
 import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
@@ -26,14 +28,18 @@ public class SpecialityController implements Initializable {
     @FXML
     private JFXTextField libelle;
     @FXML
+    private JFXTextField deleteRef;
+
+    @FXML
     private TableView<Specialty> specialtyTableView = new TableView<>();
     @FXML
     private javafx.scene.control.TableColumn<Specialty, String> references;
     @FXML
     private javafx.scene.control.TableColumn<Specialty, String> libelles;
 
+
     public SpecialityController(){this.specialtyService = new SpecialtyService();
-   
+
     }
 
     @FXML
@@ -48,10 +54,29 @@ public class SpecialityController implements Initializable {
     }
 
 
-    public void delete() throws IOException{
+    public void delete() throws IOException {
         Specialty specialty = new Specialty();
-        specialty.setReference(reference.getText());
+        specialty.setReference(deleteRef.getText());
+        specialtyService.deleteSpecialty(specialty);
+        App.setRoot("Speciality");
+
+
     }
+
+    public void edit() throws IOException{
+        Specialty selectedSpecialty = specialtyTableView.getSelectionModel().getSelectedItem();
+        libelle.setText(selectedSpecialty.getLibelle());
+        reference.setText(selectedSpecialty.getReference());
+    }
+    public void edit1() throws IOException{
+        Specialty specialty = new Specialty();
+        specialty.setLibelle(libelle.getText());
+        specialty.setReference(reference.getText());
+        specialtyService.updateSpecialty(specialty);
+        App.setRoot("Speciality");
+
+    }
+
 
     public ObservableList<Specialty> getList() {
         return list;
@@ -75,5 +100,7 @@ public class SpecialityController implements Initializable {
         libelles.setCellValueFactory(new PropertyValueFactory<>("libelle"));
         specialtyTableView.setItems(list);
 
+
     }
 }
+
