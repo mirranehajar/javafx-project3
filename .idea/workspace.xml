@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d31a148-d1a6-4da3-b13b-bde420806cd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/AddPersonnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/AddPersonnController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/SpecialityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/SpecialityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/PatientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/PatientDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/PatientDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/PatientDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/dao/SpecialtyDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mirrane/service/SpecialtyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mirrane/service/SpecialtyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/mirrane/Registration.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mirrane/Registration.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,28 +24,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1a2OkV3ivjOdUI4Fd77W91h4Hdk" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/Studies/jfoenix-8.0.2.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -76,9 +68,11 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.mirrane.App" />
-      <module name="javafx-project3.2" />
+      <module name="javafx-project3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.mirrane.*" />
@@ -89,11 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.App" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -113,6 +102,8 @@
       <workItem from="1586146760393" duration="2522000" />
       <workItem from="1586150348888" duration="2384000" />
       <workItem from="1586161449874" duration="20856000" />
+      <workItem from="1598532864460" duration="3306000" />
+      <workItem from="1598536318531" duration="2619000" />
     </task>
     <task id="LOCAL-00001" summary="tried but failed">
       <created>1586031028905</created>
@@ -251,7 +242,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tried but failed" />
@@ -276,104 +267,45 @@
     <option name="LAST_COMMIT_MESSAGE" value="yarbi maykun ta muchkil" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="400" y="27" key="#App" timestamp="1586187714120">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="279" y="135" key="#App" timestamp="1598535649256">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="400" y="27" key="#App/0.0.1366.728@0.0.1366.728" timestamp="1586161497459" />
-    <state x="400" y="27" key="#App/0.0.1366.738@0.0.1366.738" timestamp="1586187714120" />
-    <state x="275" y="27" key="#Project_Structure" timestamp="1586128709376">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="279" y="135" key="#App/0.0.1920.1080@0.0.1920.1080" timestamp="1598535649256" />
+    <state x="69" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598538776107">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1586128709376" />
-    <state x="488" y="0" width="390" height="728" key="#com.intellij.ide.util.MemberChooser" timestamp="1586180276638">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="69" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598538776107" />
+    <state x="361" y="220" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1598535636541">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="488" y="0" width="390" height="728" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586180276638" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1586159833056" />
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586161470994">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="361" y="220" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598535636541" />
+    <state x="318" y="45" key="FileChooserDialogImpl" timestamp="1598538682338">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1586161470994" />
-    <state x="534" y="260" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.738@0.0.1366.738" timestamp="1586153439003" />
-    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586140758159">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="318" y="45" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1598538682338" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1598539971698">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586140758159" />
-    <state x="316" y="0" key="CommitChangelistDialog2" timestamp="1586185679029">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1598539971698" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1598539971698">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586185679029" />
-    <state x="316" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1586159030596" />
-    <state x="410" y="109" key="FileChooserDialogImpl" timestamp="1586187746955">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1598539971698" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1598539971697">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="410" y="108" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586167615753" />
-    <state x="410" y="109" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1586187746955" />
-    <state width="926" height="610" key="GridCell.Tab.0.bottom" timestamp="1586189214080">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1598539971697" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1598539971698">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1323" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586185836998" />
-    <state width="926" height="610" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586189214080" />
-    <state width="926" height="610" key="GridCell.Tab.0.center" timestamp="1586189214079">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1598539971698" />
+    <state x="91" y="234" key="Maven.ArtifactSearchDialog" timestamp="1598536490000">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1323" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586185836998" />
-    <state width="926" height="610" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1586189214079" />
-    <state width="926" height="610" key="GridCell.Tab.0.left" timestamp="1586189214079">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="91" y="234" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1598536490000" />
+    <state x="74" y="85" key="SettingsEditor" timestamp="1598538709331">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1323" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586185836998" />
-    <state width="926" height="610" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1586189214079" />
-    <state width="926" height="610" key="GridCell.Tab.0.right" timestamp="1586189214080">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state width="1323" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586185836998" />
-    <state width="926" height="610" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1586189214080" />
-    <state x="213" y="22" key="Maven.ArtifactSearchDialog" timestamp="1586035816708">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="213" y="22" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1586035816708" />
-    <state x="129" y="55" key="MergeDialog" timestamp="1586185707566">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="129" y="55" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1586185707566" />
-    <state x="129" y="56" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1586154797730" />
-    <state x="395" y="84" key="MultipleFileMergeDialog" timestamp="1586185707577">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="395" y="84" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1586185707577" />
-    <state x="395" y="85" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1586154799920" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1586187749170">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586166361722" />
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1586187749170" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586179617962">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586179617962" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1586159049174" />
-    <state x="378" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1586146760616">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="378" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586146760616" />
-    <state x="378" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586128783154" />
-    <state x="383" y="158" key="git4idea.merge.GitPullDialog" timestamp="1586185688312">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="383" y="158" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1586185688312" />
-    <state x="383" y="160" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1586159039279" />
-    <state x="391" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586093726947">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="391" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1586093726947" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1586091688500">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586091688500" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586111318846">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586111318846" />
+    <state x="74" y="85" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1598538709331" />
   </component>
 </project>
